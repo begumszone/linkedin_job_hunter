@@ -52,3 +52,16 @@ def test_rejects_email_without_recipients(tmp_path):
 def test_missing_file_is_reported(tmp_path):
     with pytest.raises(ConfigError, match="bulunamadı"):
         load_config(tmp_path / "yok.yaml")
+
+
+def test_recipients_can_come_from_the_environment(tmp_path, monkeypatch):
+    text = BASE.replace('    recipients: ["me@example.com"]', "    recipients: []")
+    monkeypatch.setenv("EMAIL_RECIPIENTS", "a@example.com, b@example.com")
+    config = load_config(write(tmp_path, text))
+    assert config.email.recipients == ["a@example.com", "b@example.com"]
+
+
+def test_env_recipients_are_merged_without_duplicates(tmp_path, monkeypatch):
+    monkeypatch.setenv("EMAIL_RECIPIENTS", "me@example.com,other@example.com")
+    config = load_config(write(tmp_path, BASE))
+    assert config.email.recipients == ["me@example.com", "other@example.com"]

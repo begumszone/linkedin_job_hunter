@@ -43,7 +43,19 @@ yolunu izleyip şunları ekle:
 | `SMTP_HOST`     | `smtp.gmail.com` (Gmail dışıysa değiştir)      | Hayır   |
 | `SMTP_PORT`     | `587`                                           | Hayır   |
 | `SMTP_FROM`     | Farklı bir "gönderen" adresi istiyorsan        | Hayır   |
+| `EMAIL_RECIPIENTS` | Bildirimin gideceği adres(ler), virgülle ayrılmış | Hayır* |
 | `NTFY_TOPIC`    | Sadece ntfy'yi açtıysan                        | Hayır   |
+
+\* **Bu repo herkese açık (public).** `config.yaml` içine yazdığın her şeyi
+herkes görebilir — e-posta adresin dahil. Adresini repoda göstermek istemiyorsan
+`config.yaml` içindeki `recipients` listesini boş bırak ve adres(ler)ini
+`EMAIL_RECIPIENTS` secret'ı olarak ver:
+`senin-adresin@gmail.com,arkadasin@gmail.com`. Secret'lar repoda görünmez.
+
+> Repoyu **private** yapmayı da düşünebilirsin, ama dikkat: private repolarda
+> GitHub Actions ayda 2000 dakika ücretsizdir ve 10 dakikalık tarama bu sınırı
+> aşar. Public repoda Actions dakikası sınırsızdır. Bu yüzden önerim: repo public
+> kalsın, kişisel bilgi `EMAIL_RECIPIENTS` secret'ında dursun.
 
 Şifre asla `config.yaml` içine yazılmaz; secret'lar repoda görünmez.
 
@@ -61,7 +73,7 @@ searches:
 
 notifications:
   email:
-    recipients: ["senin-adresin@gmail.com"]
+    recipients: []      # adresini EMAIL_RECIPIENTS secret'ında tut (yukarı bak)
 ```
 
 ### 4. Actions'ı aç ve test et
@@ -91,6 +103,7 @@ pip install -r requirements.txt
 export SMTP_HOST=smtp.gmail.com
 export SMTP_USERNAME=senin-adresin@gmail.com
 export SMTP_PASSWORD=uygulama-sifresi
+export EMAIL_RECIPIENTS=senin-adresin@gmail.com
 
 python -m job_hunter --config config.yaml --dry-run   # deneme
 python -m job_hunter --config config.yaml             # gerçek gönderim
@@ -117,6 +130,10 @@ searches:
     location: "Türkiye"
     recipients: ["ayse@example.com"]      # bu arama sadece Ayşe'ye gider
 ```
+
+Arkadaşının adresini repoda göstermek istemiyorsan onu da `EMAIL_RECIPIENTS`
+secret'ına ekleyebilirsin — ama o zaman bütün aramaları alır. Adresi belirli bir
+aramaya bağlamak istiyorsan `recipients` alanına yazman gerekir; önce ona sor.
 
 `notifications.email.recipients` altındaki adresler **bütün** aramaları alır;
 bir aramanın kendi `recipients` listesi ise **sadece o aramayı** alır.

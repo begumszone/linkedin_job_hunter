@@ -112,6 +112,12 @@ def _env(name: str, fallback: str = "") -> str:
     return os.environ.get(name, fallback)
 
 
+def _env_list(name: str) -> list[str]:
+    """Read a comma-separated env var, e.g. EMAIL_RECIPIENTS."""
+    raw = os.environ.get(name, "")
+    return [item.strip() for item in raw.split(",") if item.strip()]
+
+
 def load_config(path: str | Path) -> Config:
     path = Path(path)
     if not path.exists():
@@ -128,9 +134,16 @@ def load_config(path: str | Path) -> Config:
     raw_email = raw_notify.get("email") or {}
     # Credentials come from the environment (GitHub Actions secrets), never
     # from the committed config file.
+    # Recipients may live in EMAIL_RECIPIENTS so a public repo need not carry
+    # anyone's address; both sources are merged, config order first.
+    recipients = _as_list(raw_email.get("recipients"))
+    for address in _env_list("EMAIL_RECIPIENTS"):
+        if address not in recipients:
+            recipients.append(address)
+
     email = EmailConfig(
         enabled=bool(raw_email.get("enabled", True)),
-        recipients=_as_list(raw_email.get("recipients")),
+        recipients=recipients,
         subject_prefix=str(raw_email.get("subject_prefix", "[İlan]")),
         host=_env("SMTP_HOST", str(raw_email.get("host", "smtp.gmail.com"))),
         port=int(_env("SMTP_PORT", str(raw_email.get("port", 587)))),

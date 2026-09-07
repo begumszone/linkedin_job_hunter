@@ -38,8 +38,9 @@ notifications:
   email:
     enabled: true
     # Bildirimlerin gideceği adres(ler).
-    recipients:
-      - "senin-adresin@example.com"
+    # Repo herkese açıksa adresini buraya YAZMA; bunun yerine EMAIL_RECIPIENTS
+    # secret'ını kullan (virgülle ayırarak birden fazla adres yazabilirsin).
+    recipients: []
     subject_prefix: "[İlan]"
     # Gmail dışında bir sağlayıcı kullanıyorsan host/port'u SMTP_HOST ve
     # SMTP_PORT secret'ları ile de verebilirsin.
