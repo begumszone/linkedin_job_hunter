@@ -28,10 +28,16 @@ def test_loads_a_valid_config(tmp_path):
     assert config.email.recipients == ["me@example.com"]
 
 
-def test_rejects_more_than_five_keywords(tmp_path):
-    text = BASE.replace("[finans, IFRS]", "[a, b, c, d, e, f]")
-    with pytest.raises(ConfigError, match="en fazla 5"):
-        load_config(write(tmp_path, text))
+def test_accepts_up_to_ten_keywords(tmp_path):
+    ten = "[" + ", ".join(f"k{i}" for i in range(10)) + "]"
+    config = load_config(write(tmp_path, BASE.replace("[finans, IFRS]", ten)))
+    assert len(config.searches[0].keywords) == 10
+
+
+def test_rejects_more_than_ten_keywords(tmp_path):
+    eleven = "[" + ", ".join(f"k{i}" for i in range(11)) + "]"
+    with pytest.raises(ConfigError, match="en fazla 10"):
+        load_config(write(tmp_path, BASE.replace("[finans, IFRS]", eleven)))
 
 
 def test_rejects_unknown_match_mode(tmp_path):

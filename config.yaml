@@ -7,7 +7,7 @@
 
 searches:
   - name: "Finans / FP&A"
-    # En fazla 5 anahtar kelime.
+    # En fazla 10 anahtar kelime.
     keywords:
       - finans       # Türkçe başlıklar: "Finans Uzmanı", "Finansal Raporlama"
       - finance      # İngilizce başlıklar: "Finance Manager"

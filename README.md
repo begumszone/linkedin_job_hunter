@@ -7,7 +7,7 @@ LinkedIn'de "en yeniden en eskiye" düzgün bir sıralama olmadığı için, iş
 her 10 dakikada bir arka planda arama yapılır, yeni çıkan ilanlar tespit edilir
 ve sadece **daha önce bildirilmemiş** olanlar sana gelir.
 
-- En fazla **5 anahtar kelime** (ör. `finans`, `FP&A`, `IFRS`)
+- En fazla **10 anahtar kelime** (ör. `finans`, `FP&A`, `IFRS`)
 - **Konum** seçilebilir (ör. `İstanbul, Türkiye`) — boş bırakırsan her yer
 - **GitHub Actions** üzerinde çalışır: bilgisayarın kapalıyken de tarar, ücretsiz
 - Aynı ilan iki kez gönderilmez
@@ -66,7 +66,7 @@ En az şunları değiştir:
 ```yaml
 searches:
   - name: "Finans / FP&A"
-    keywords: [finans, "FP&A", IFRS]     # en fazla 5 tane
+    keywords: [finans, "FP&A", IFRS]     # en fazla 10 tane
     location: "İstanbul, Türkiye"
     match_mode: any                       # any = herhangi biri, all = hepsi
     exclude: [stajyer, intern]            # bu kelimeler geçerse gönderme

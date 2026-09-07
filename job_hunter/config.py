@@ -9,7 +9,7 @@ from typing import Any
 
 import yaml
 
-MAX_KEYWORDS = 5
+MAX_KEYWORDS = 10
 VALID_MODES = {"any", "all"}
 
 
