@@ -11,9 +11,14 @@ searches:
     keywords:
       - finans       # Türkçe başlıklar: "Finans Uzmanı", "Finansal Raporlama"
       - finance      # İngilizce başlıklar: "Finance Manager"
-      - FP&A
-      - IFRS
       - reporting
+      - raporlama
+      - IFRS
+      - UFRS
+      - LOGO
+      - controlling
+      - excel
+      - treasury
     # Konum: LinkedIn'in tanıdığı herhangi bir yazım. Boş bırakırsan her yer.
     location: "İstanbul, Türkiye"
     # any = kelimelerden herhangi biri geçsin (önerilen)
@@ -23,6 +28,9 @@ searches:
     exclude:
       - stajyer
       - intern
+      # 'excel' anahtar kelimesi "Operational Excellence" başlıklarına da
+      # uyduğu için o ilanlar eleniyor.
+      - excellence
     # Sadece uzaktan çalışma ilanları için true yap.
     remote_only: false
     # Bu aramanın sonuçları ayrıca şu adreslere de gitsin (arkadaşların için).
