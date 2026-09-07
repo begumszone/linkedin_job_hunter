@@ -8,12 +8,12 @@
 searches:
   - name: "Finans / FP&A"
     # En fazla 5 anahtar kelime.
-      keywords:
-    - finance
-    - FP&A
-    - IFRS
-    - reporting
-    - budget
+    keywords:
+      - finance
+      - FP&A
+      - IFRS
+      - reporting
+      - budget
     # Konum: LinkedIn'in tanıdığı herhangi bir yazım. Boş bırakırsan her yer.
     location: "İstanbul, Türkiye"
     # any = kelimelerden herhangi biri geçsin (önerilen)
