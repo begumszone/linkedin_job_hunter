@@ -22,7 +22,7 @@ log = logging.getLogger(__name__)
 SEARCH_URL = (
     "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
 )
-PAGE_SIZE = 25
+MAX_PAGES = 20
 _JOB_ID_FROM_URL = re.compile(r"-(\d{6,})(?:\?|$)")
 _JOB_ID_FROM_URN = re.compile(r"(\d{6,})")
 
@@ -161,7 +161,11 @@ class LinkedInClient:
         found: dict[str, Job] = {}
         start = 0
 
-        while start < max_results:
+        # LinkedIn decides its own page size (10 at the time of writing), so
+        # advance by however many cards came back instead of assuming one.
+        for _ in range(MAX_PAGES):
+            if len(found) >= max_results:
+                break
             params = {
                 "keywords": keywords,
                 "location": location,
@@ -194,9 +198,10 @@ class LinkedInClient:
                     found[job.id] = job
                     new_on_page += 1
 
-            if new_on_page == 0 or len(page) < PAGE_SIZE:
+            # Nothing new means LinkedIn is repeating itself: stop paging.
+            if new_on_page == 0:
                 break
-            start += PAGE_SIZE
+            start += len(page)
 
         log.info(
             "'%s' (%s) için %d ilan bulundu",
