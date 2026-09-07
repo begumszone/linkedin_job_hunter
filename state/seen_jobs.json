@@ -1,12 +1,40 @@
 {
   "jobs": {
+    "4287113915": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Dijital Pazarlama & Saha Satış Uzmanı (Yazılım / SaaS / ERP)"
+    },
+    "4414019431": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Dijital Pazarlama Yöneticisi"
+    },
+    "4425816871": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Finansal ve Yasal Raporlama Uzmanı"
+    },
     "4435677375": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Group Budget & Reporting Executive"
     },
+    "4445319561": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Growth&CRM Manager"
+    },
+    "4446169472": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Perfect Store & Trade Shopper Marketing Specialist"
+    },
+    "4449238716": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marketing Specialist (New Grad)"
+    },
     "4451500644": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "IFRS Reporting Specialist"
+    },
+    "4452040981": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marketing & Sales Manager"
     },
     "4457258453": {
       "first_seen": "2026-09-07T11:29:38+00:00",
@@ -16,17 +44,61 @@
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Tahsilat Stratejisi ve Raporlama Yönetmeni"
     },
+    "4458211359": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Pazarlama Uzmanı"
+    },
+    "4460716754": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Dijital Pazarlama Uzmanı"
+    },
+    "4460898067": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "B2B Growth & Product Marketing Lead – Global Markets"
+    },
     "4461143637": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Finance and Accounting Officer"
+    },
+    "4461460629": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Manager of Influencer Marketing"
+    },
+    "4461843520": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Kıdemli Performans Pazarlama Uzmanı (Meta & Google Ads)"
+    },
+    "4461860904": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marketing Communications Specialist"
+    },
+    "4461863268": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Manager of Influencer Marketing"
     },
     "4461864896": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Finans Uzman Yardımcısı"
     },
+    "4461868962": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
+    "4461875990": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marketing Executive"
+    },
+    "4461880575": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Performans Pazarlama Uzmanı"
+    },
     "4461881214": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Senior Treasury Analytics & ALM Specialist"
+    },
+    "4461882011": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Digital Marketing Coordinator"
     },
     "4461882235": {
       "first_seen": "2026-09-07T11:29:38+00:00",
@@ -36,9 +108,49 @@
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Yurtiçi Lojistik Bütçe ve Raporlama Uzmanı"
     },
+    "4461882971": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Performans Pazarlama Kıdemli Uzmanı"
+    },
+    "4461883107": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Performans Pazarlama Uzmanı"
+    },
+    "4461885799": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marka Yüzü & Satış ve Pazarlama Uzmanı"
+    },
+    "4461887942": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
+    "4461888394": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Reklam ve Pazarlama Direktörü"
+    },
+    "4461890382": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Performans Pazarlama Uzmanı (E-Ticaret & Paid Media)"
+    },
+    "4461890838": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marketing Director"
+    },
     "4461891062": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Finans Uzmanı"
+    },
+    "4461891421": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Senior Performance Marketing Executive"
+    },
+    "4461893000": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marketing Manager"
+    },
+    "4461894250": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marketing & Corporate Communications Director"
     },
     "4461895197": {
       "first_seen": "2026-09-07T11:29:38+00:00",
@@ -56,22 +168,66 @@
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Finans Görevlisi"
     },
+    "4462203614": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Dijital Pazarlama Uzmanı"
+    },
+    "4462204369": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Performans pazarlama uzmanı"
+    },
+    "4462213106": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Influencer Marketing & Social Media Specialist"
+    },
+    "4462215167": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Digital Marketing Specialist (Performance Marketing)"
+    },
     "4462901935": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Bağımsız Denetim ve Yurtdışı Raporlama Uzmanı/Kıdemli Uzmanı"
+    },
+    "4462925445": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Senior Marketing and Communications Specialist"
+    },
+    "4462935991": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Finansal Raporlama Analiz Yöneticisi"
+    },
+    "4462941938": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Bütçe ve Raporlama Yöneticisi"
+    },
+    "4463362778": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Principal Marketing Lead / Specialized Surgical - Indirect (ME & ICA) markets"
     },
     "4464043171": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Strategy and Financial Reporting Executive"
     },
+    "4464091184": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Marketing Management Trainee (All genders)"
+    },
     "4464314556": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Finans Yöneticisi"
     },
+    "4464330568": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Finans Uzmanı"
+    },
     "4464332302": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Treasury Trading Manager"
+    },
+    "4464333756": {
+      "first_seen": "2026-09-07T12:42:10+00:00",
+      "title": "Bütçe Raporlama Yöneticisi"
     }
   },
-  "updated_at": "2026-09-07T11:29:38+00:00"
+  "updated_at": "2026-09-07T12:42:10+00:00"
 }
