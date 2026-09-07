@@ -4,7 +4,7 @@ LinkedIn'de **son 24 saatte yayınlanan** ilanları senin anahtar kelimelerine g
 tarar, daha önce görmediklerini bulur ve sana **e-posta** gönderir.
 
 LinkedIn'de "en yeniden en eskiye" düzgün bir sıralama olmadığı için, iş şu:
-her 10 dakikada bir arka planda arama yapılır, yeni çıkan ilanlar tespit edilir
+her 15 dakikada bir arka planda arama yapılır, yeni çıkan ilanlar tespit edilir
 ve sadece **daha önce bildirilmemiş** olanlar sana gelir.
 
 - En fazla **10 anahtar kelime** (ör. `finans`, `FP&A`, `IFRS`)
@@ -85,7 +85,7 @@ notifications:
 3. Log'da ilanları görüyorsan `dry_run` olmadan bir kez daha çalıştır; e-posta
    gelmeli.
 
-Bundan sonra **her 10 dakikada bir** kendi kendine çalışır.
+Bundan sonra **her 15 dakikada bir** kendi kendine çalışır.
 
 > **Önemli:** GitHub, zamanlanmış (cron) çalıştırmayı **sadece deponun varsayılan
 > (default) branch'inde** yapar. Bu kod bir feature branch'te duruyorsa, otomatik
@@ -199,14 +199,14 @@ kayıt, sıfır ek servis.
 - **LinkedIn'in resmî bir iş ilanı API'si yok.** Bu araç, LinkedIn'in giriş
   yapmadan görünen arama sayfasını okur. Kişisel ölçekte ve düşük istek
   sıklığında çalışır; tarama sıklığını çok artırırsan LinkedIn istekleri geçici
-  olarak sınırlayabilir. Varsayılan ayar 10 dakikada bir tarama ve istekler arası
-  3 saniye bekleme. 3 anahtar kelimeyle bu, saatte ~18 istek eder — düşük bir
+  olarak sınırlayabilir. Varsayılan ayar 15 dakikada bir tarama ve istekler arası
+  3 saniye bekleme. 3 anahtar kelimeyle bu, saatte ~12 istek eder — düşük bir
   sayı, sorun çıkarması beklenmez. Yine de LinkedIn 429 döndürürse tarama o tur
   için durur ve bir sonraki turda kaldığı yerden devam eder, ilan kaçmaz.
-- **Cron aralığını daha da kısaltmak işe yaramaz.** GitHub'ın zamanlayıcısı
-  garantili değildir: yoğun saatlerde çalışmalar gecikir, hatta bazı turlar
-  atlanabilir. `*/5` yazsan bile pratikte 10-15 dakikada bir çalışır. `*/10`
-  bu yüzden makul üst sınır.
+- **Cron aralığını kısaltmak işe yaramaz.** GitHub'ın zamanlayıcısı garantili
+  değildir: yoğun saatlerde çalışmalar gecikir, bazı turlar hiç çalışmayabilir.
+  Yeni depolarda zamanlayıcının devreye girmesi saatler sürebiliyor; bu süre
+  boyunca Actions sekmesinden **Run workflow** ile elle çalıştırabilirsin.
 - LinkedIn sayfa yapısını değiştirirse tarama boş dönebilir. Bu durumda log'a
   `hiç ilan kartı ayrıştırılamadı` uyarısı düşer — sessizce sus pus olmaz.
 - Eşleşme yalnızca **ilan başlığı** üzerinden yapılır; ilan metninin tamamı

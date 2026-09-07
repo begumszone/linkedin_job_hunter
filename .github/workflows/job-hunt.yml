@@ -2,9 +2,11 @@ name: LinkedIn ilan taraması
 
 on:
   schedule:
-    # Her 10 dakikada bir. GitHub'ın zamanlayıcısı yoğunken çalışmalar
-    # birkaç dakika gecikebilir; pratikte aralık 10-20 dakika arasında oynar.
-    - cron: "*/10 * * * *"
+    # Her 15 dakikada bir. Tarama 20 anahtar kelimeyle ~3,5 dakika sürüyor;
+    # daha sık çalıştırmak turları üst üste bindirir ve LinkedIn'e giden istek
+    # sayısını gereksiz artırır. GitHub'ın zamanlayıcısı ayrıca garantili
+    # değildir, yoğunken çalışmaları geciktirir.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
