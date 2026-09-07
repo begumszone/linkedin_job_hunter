@@ -9,11 +9,11 @@ searches:
   - name: "Finans / FP&A"
     # En fazla 5 anahtar kelime.
     keywords:
-      - finance
+      - finans       # Türkçe başlıklar: "Finans Uzmanı", "Finansal Raporlama"
+      - finance      # İngilizce başlıklar: "Finance Manager"
       - FP&A
       - IFRS
       - reporting
-      - budget
     # Konum: LinkedIn'in tanıdığı herhangi bir yazım. Boş bırakırsan her yer.
     location: "İstanbul, Türkiye"
     # any = kelimelerden herhangi biri geçsin (önerilen)
