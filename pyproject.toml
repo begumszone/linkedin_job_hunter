@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+# Put the project root on sys.path so `pytest` works the same as
+# `python -m pytest` (the bare command does not add the current directory).
+pythonpath = ["."]
+testpaths = ["tests"]
