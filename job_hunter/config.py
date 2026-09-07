@@ -109,7 +109,13 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
 
 
 def _env(name: str, fallback: str = "") -> str:
-    return os.environ.get(name, fallback)
+    """Read an env var, treating an empty value as absent.
+
+    A workflow passes every declared secret through, so an unset secret still
+    arrives as an empty string; without this the config-file default would be
+    overwritten by "".
+    """
+    return os.environ.get(name, "").strip() or fallback
 
 
 def _env_list(name: str) -> list[str]:

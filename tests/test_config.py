@@ -65,3 +65,27 @@ def test_env_recipients_are_merged_without_duplicates(tmp_path, monkeypatch):
     monkeypatch.setenv("EMAIL_RECIPIENTS", "me@example.com,other@example.com")
     config = load_config(write(tmp_path, BASE))
     assert config.email.recipients == ["me@example.com", "other@example.com"]
+
+
+def test_empty_env_vars_fall_back_to_config_defaults(tmp_path, monkeypatch):
+    # Unset GitHub Actions secrets still reach the process as empty strings.
+    monkeypatch.setenv("SMTP_PORT", "")
+    monkeypatch.setenv("SMTP_HOST", "")
+    config = load_config(write(tmp_path, BASE))
+    assert config.email.port == 587
+    assert config.email.host == "smtp.gmail.com"
+
+
+def test_env_vars_override_config_when_set(tmp_path, monkeypatch):
+    monkeypatch.setenv("SMTP_PORT", "465")
+    monkeypatch.setenv("SMTP_HOST", "smtp.office365.com")
+    config = load_config(write(tmp_path, BASE))
+    assert config.email.port == 465
+    assert config.email.host == "smtp.office365.com"
+
+
+def test_blank_sender_falls_back_to_username(tmp_path, monkeypatch):
+    monkeypatch.setenv("SMTP_FROM", "")
+    monkeypatch.setenv("SMTP_USERNAME", "me@gmail.com")
+    config = load_config(write(tmp_path, BASE))
+    assert config.email.sender == "me@gmail.com"
