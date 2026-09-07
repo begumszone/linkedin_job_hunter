@@ -40,6 +40,30 @@ searches:
     # istek sayısını artırır.
     max_results: 25
 
+  - name: "Pazarlama / CRM"
+    keywords:
+      - pazarlama      # "Dijital Pazarlama Uzmanı"
+      - marketing      # Growth/Brand/Performance/Multi-Channel Marketing'i de kapsar
+      - CRM
+      - loyalty
+      - sadakat        # "Sadakat Programları Uzmanı"
+      - kampanya       # "Kampanya Yönetimi Uzmanı"
+      - campaign       # "Campaign Manager"
+      - ad operations  # "Ad Operations Specialist"
+      - marka          # "Marka Yöneticisi"
+      - iletişim       # "Kurumsal İletişim Uzmanı"
+    location: "İstanbul, Türkiye"
+    match_mode: any
+    exclude:
+      - stajyer
+      - intern
+    # Adresler repoda durmasın diye secret'tan okunuyor.
+    # GitHub'da MARKETING_EMAILS adıyla, iki adres virgülle ayrılmış olarak tanımlı.
+    recipients_secret: MARKETING_EMAILS
+    max_results: 25
+    # İş bulunca aramayı silme, burayı false yap.
+    enabled: true
+
   # Bir arkadaşın için ikinci arama örneği — kullanmıyorsan bu bloğu sil.
   #
   # Adresini buraya YAZMA: repo herkese açık. Bunun yerine adresi bir secret
