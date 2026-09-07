@@ -95,3 +95,59 @@ def test_blank_sender_falls_back_to_username(tmp_path, monkeypatch):
     monkeypatch.setenv("SMTP_USERNAME", "me@gmail.com")
     config = load_config(write(tmp_path, BASE))
     assert config.email.sender == "me@gmail.com"
+
+
+SHARED = """
+searches:
+  - name: "Benim"
+    keywords: [finans]
+    recipients_secret: MY_EMAIL
+  - name: "Arkadaşım"
+    keywords: [denetim]
+    recipients_secret: FRIEND_EMAIL
+notifications:
+  email:
+    enabled: true
+    recipients: []
+"""
+
+
+def test_recipients_can_come_from_a_named_secret(tmp_path, monkeypatch):
+    monkeypatch.setenv("MY_EMAIL", "me@example.com")
+    monkeypatch.setenv("FRIEND_EMAIL", "friend@example.com")
+    config = load_config(write(tmp_path, SHARED))
+    mine, theirs = config.searches
+    assert config.recipients_for(mine) == ["me@example.com"]
+    assert config.recipients_for(theirs) == ["friend@example.com"]
+
+
+def test_a_search_with_its_own_recipients_ignores_the_global_list(tmp_path, monkeypatch):
+    monkeypatch.setenv("EMAIL_RECIPIENTS", "me@example.com")
+    monkeypatch.setenv("FRIEND_EMAIL", "friend@example.com")
+    config = load_config(write(tmp_path, SHARED.replace("recipients_secret: MY_EMAIL", "recipients: []")))
+    mine, theirs = config.searches
+    assert config.recipients_for(mine) == ["me@example.com"]      # falls back
+    assert config.recipients_for(theirs) == ["friend@example.com"]  # not both
+
+
+def test_disabled_searches_are_skipped(tmp_path):
+    text = BASE.replace('    location: "İstanbul, Türkiye"',
+                        '    location: "İstanbul, Türkiye"\n    enabled: false')
+    config = load_config(write(tmp_path, text))
+    assert config.searches[0].enabled is False
+    assert config.active_searches() == []
+
+
+def test_a_search_without_any_recipient_is_rejected(tmp_path):
+    text = BASE.replace('    recipients: ["me@example.com"]', "    recipients: []")
+    with pytest.raises(ConfigError, match="alıcısı yok"):
+        load_config(write(tmp_path, text))
+
+
+def test_disabled_search_without_recipients_is_not_rejected(tmp_path):
+    text = (
+        BASE.replace('    recipients: ["me@example.com"]', "    recipients: []")
+        .replace('    location: "İstanbul, Türkiye"',
+                 '    location: "İstanbul, Türkiye"\n    enabled: false')
+    )
+    assert load_config(write(tmp_path, text)).active_searches() == []

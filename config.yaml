@@ -40,13 +40,22 @@ searches:
     # istek sayısını artırır.
     max_results: 25
 
-  # İkinci bir arama örneği — gerek yoksa bu bloğu silebilirsin.
-  # - name: "Uzaktan denetim"
-  #   keywords: ["internal audit", "denetim"]
-  #   location: "Türkiye"
+  # Bir arkadaşın için ikinci arama örneği — kullanmıyorsan bu bloğu sil.
+  #
+  # Adresini buraya YAZMA: repo herkese açık. Bunun yerine adresi bir secret
+  # olarak ekle (Settings > Secrets > Actions), adını da recipients_secret'a yaz.
+  # Bu aramanın sonuçları yalnızca o adrese gider, sana gelmez.
+  #
+  # İş bulup durdurmak istersen bloğu silmene gerek yok: enabled: false yeter.
+  #
+  # - name: "Ayşe – denetim"
+  #   keywords: ["internal audit", "denetim", "iç kontrol"]
+  #   location: "Ankara, Türkiye"
   #   match_mode: any
-  #   remote_only: true
-  #   recipients: ["arkadasim@example.com"]
+  #   exclude: ["stajyer"]
+  #   recipients_secret: AYSE_EMAIL
+  #   max_results: 25
+  #   enabled: true
 
 notifications:
   email:

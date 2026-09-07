@@ -116,28 +116,35 @@ python -m job_hunter --config config.yaml             # gerçek gönderim
 İki yolu var:
 
 **A) Aynı kurulumdan herkese gönder (en kolay).**
-Her arkadaşın için ayrı bir arama tanımla ve `recipients` alanına adresini yaz.
-Kendi anahtar kelimelerini ve konumunu alır, e-posta doğrudan ona gider:
+Arkadaşın hiçbir şey yapmaz. Sen onun için ayrı bir arama tanımlarsın; kendi
+anahtar kelimelerini ve konumunu alır, e-posta doğrudan ona gider.
+
+Adresini `config.yaml`'a yazma — repo herkese açıksa adres de açık olur. Bunun
+yerine adresi bir secret olarak ekle (ör. `AYSE_EMAIL`) ve adını
+`recipients_secret` alanına yaz:
 
 ```yaml
 searches:
   - name: "Benim aramam"
     keywords: [finans, "FP&A", IFRS]
     location: "İstanbul, Türkiye"
+    # kendi recipients'ı yok → EMAIL_RECIPIENTS secret'ındaki adres(ler)e gider
 
   - name: "Ayşe – denetim"
     keywords: ["internal audit", denetim]
-    location: "Türkiye"
-    recipients: ["ayse@example.com"]      # bu arama sadece Ayşe'ye gider
+    location: "Ankara, Türkiye"
+    recipients_secret: AYSE_EMAIL    # sadece bu adrese gider
+    enabled: true
 ```
 
-Arkadaşının adresini repoda göstermek istemiyorsan onu da `EMAIL_RECIPIENTS`
-secret'ına ekleyebilirsin — ama o zaman bütün aramaları alır. Adresi belirli bir
-aramaya bağlamak istiyorsan `recipients` alanına yazman gerekir; önce ona sor.
+Dağıtım kuralı: bir aramanın kendi alıcısı varsa sonuçlar **yalnızca** ona
+gider; yoksa `notifications.email.recipients` / `EMAIL_RECIPIENTS`'taki genel
+adreslere düşer. Yani kimse başkasının ilanlarını almaz ve kimse diğerinin
+adresini görmez.
 
-`notifications.email.recipients` altındaki adresler **bütün** aramaları alır;
-bir aramanın kendi `recipients` listesi ise **sadece o aramayı** alır.
-Herkes ayrı e-posta alır, kimse diğerinin adresini görmez.
+**Birini durdurmak** (iş buldu, ara vermek istiyor): aramayı silmene gerek yok,
+`enabled: false` yeter. Kelimeleri yerinde kalır, tekrar başlarken `true`
+yaparsın.
 
 **B) Repoyu fork'lasınlar.**
 Arkadaşın repoyu fork'lar, kendi Gmail uygulama şifresini kendi secret'ı olarak

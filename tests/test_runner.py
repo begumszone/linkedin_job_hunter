@@ -55,3 +55,32 @@ def test_dry_run_records_nothing(monkeypatch, tmp_path):
     config.settings.state_file = str(tmp_path / "s.json")
     assert runner.run(config, dry_run=True) == 0
     assert len(SeenStore(tmp_path / "s.json")) == 0
+
+
+def test_each_address_only_receives_its_own_search(monkeypatch):
+    mine = Search(name="Benim", keywords=["finans"], recipients=["me@example.com"])
+    theirs = Search(name="Arkadaşım", keywords=["denetim"], recipients=["friend@example.com"])
+    config = Config(
+        searches=[mine, theirs],
+        email=EmailConfig(enabled=True, recipients=[]),
+        ntfy=NtfyConfig(),
+        settings=Settings(),
+    )
+
+    sent: dict[str, list[str]] = {}
+    monkeypatch.setattr(
+        runner,
+        "send_email",
+        lambda cfg, to, jobs: sent.setdefault(to[0], [j.title for j in jobs]),
+    )
+
+    my_job = job("1", "Finans Uzmanı")
+    my_job.search_name = "Benim"
+    their_job = job("2", "Denetim Uzmanı")
+    their_job.search_name = "Arkadaşım"
+
+    assert runner.notify(config, [my_job, their_job]) == []
+    assert sent == {
+        "me@example.com": ["Finans Uzmanı"],
+        "friend@example.com": ["Denetim Uzmanı"],
+    }

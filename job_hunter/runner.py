@@ -23,7 +23,7 @@ def collect_new_jobs(config: Config, store: SeenStore) -> list[Job]:
     new_jobs: list[Job] = []
     seen_this_run: set[str] = set()
 
-    for search in config.searches:
+    for search in config.active_searches():
         for query in build_query(search.keywords, search.match_mode):
             try:
                 results = client.search(
@@ -68,12 +68,15 @@ def notify(config: Config, jobs: list[Job]) -> list[str]:
     errors: list[str] = []
 
     if config.email.enabled:
-        # Each search may add its own recipients on top of the global list.
+        # One digest per address, holding only the searches that address asked
+        # for — nobody receives someone else's alerts.
         per_recipient: dict[str, list[Job]] = {}
+        by_name = {s.name: s for s in config.searches}
         for job in jobs:
-            search = next((s for s in config.searches if s.name == job.search_name), None)
-            recipients = set(config.email.recipients) | set(search.recipients if search else [])
-            for address in recipients:
+            search = by_name.get(job.search_name)
+            if search is None:
+                continue
+            for address in config.recipients_for(search):
                 per_recipient.setdefault(address, []).append(job)
 
         for address, address_jobs in per_recipient.items():

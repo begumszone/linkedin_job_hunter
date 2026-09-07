@@ -27,6 +27,7 @@ class Search:
     remote_only: bool = False
     recipients: list[str] = field(default_factory=list)
     max_results: int = 25
+    enabled: bool = True
 
 
 @dataclass
@@ -69,6 +70,18 @@ class Config:
     ntfy: NtfyConfig
     settings: Settings
 
+    def active_searches(self) -> list[Search]:
+        return [search for search in self.searches if search.enabled]
+
+    def recipients_for(self, search: Search) -> list[str]:
+        """Who gets this search's results.
+
+        A search with its own recipients goes only to them — so one person's
+        alerts never land in another's inbox. Searches without their own list
+        fall back to the global recipients.
+        """
+        return search.recipients or self.email.recipients
+
 
 def _as_list(value: Any) -> list[str]:
     if value is None:
@@ -96,6 +109,15 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
             f"içinden biri olmalı, '{mode}' değil."
         )
 
+    # A search can name a secret holding its recipients, so a public repo
+    # never has to carry anyone's address.
+    recipients = _as_list(raw.get("recipients"))
+    secret_name = str(raw.get("recipients_secret") or "").strip()
+    if secret_name:
+        for address in _env_list(secret_name):
+            if address not in recipients:
+                recipients.append(address)
+
     return Search(
         name=name,
         keywords=keywords,
@@ -103,8 +125,9 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
         match_mode=mode,
         exclude=[term.strip() for term in _as_list(raw.get("exclude")) if term.strip()],
         remote_only=bool(raw.get("remote_only", False)),
-        recipients=_as_list(raw.get("recipients")),
+        recipients=recipients,
         max_results=int(raw.get("max_results", 25)),
+        enabled=bool(raw.get("enabled", True)),
     )
 
 
@@ -175,12 +198,18 @@ def load_config(path: str | Path) -> Config:
         forget_after_days=int(raw_settings.get("forget_after_days", 30)),
     )
 
-    if email.enabled and not email.recipients and not any(s.recipients for s in searches):
-        raise ConfigError(
-            "E-posta açık ama hiç alıcı yok. notifications.email.recipients "
-            "altına en az bir adres ekle."
-        )
+    config = Config(searches=searches, email=email, ntfy=ntfy, settings=settings)
+
+    if email.enabled:
+        orphans = [s.name for s in config.active_searches() if not config.recipients_for(s)]
+        if orphans:
+            raise ConfigError(
+                "Şu aramaların alıcısı yok: "
+                + ", ".join(orphans)
+                + ". Aramaya 'recipients' (ya da 'recipients_secret') ekle, "
+                "veya notifications.email.recipients altına genel bir adres yaz."
+            )
     if ntfy.enabled and not ntfy.topic:
         raise ConfigError("ntfy açık ama 'topic' boş.")
 
-    return Config(searches=searches, email=email, ntfy=ntfy, settings=settings)
+    return config
