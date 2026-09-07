@@ -114,7 +114,17 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
     recipients = _as_list(raw.get("recipients"))
     secret_name = str(raw.get("recipients_secret") or "").strip()
     if secret_name:
-        for address in _env_list(secret_name):
+        from_secret = _env_list(secret_name)
+        if not from_secret and not recipients:
+            # Falling back to the global list here would quietly send this
+            # search's alerts to the wrong person.
+            raise ConfigError(
+                f"'{name}' araması alıcılarını '{secret_name}' secret'ından "
+                f"okuyor ama o secret tanımlı değil ya da boş. GitHub'da "
+                f"Settings > Secrets and variables > Actions altına ekle, "
+                f"veya aramayı geçici olarak 'enabled: false' yap."
+            )
+        for address in from_secret:
             if address not in recipients:
                 recipients.append(address)
 

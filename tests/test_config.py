@@ -151,3 +151,12 @@ def test_disabled_search_without_recipients_is_not_rejected(tmp_path):
                  '    location: "İstanbul, Türkiye"\n    enabled: false')
     )
     assert load_config(write(tmp_path, text)).active_searches() == []
+
+
+def test_missing_recipients_secret_is_an_error_not_a_fallback(tmp_path, monkeypatch):
+    monkeypatch.setenv("EMAIL_RECIPIENTS", "me@example.com")
+    monkeypatch.delenv("FRIEND_EMAIL", raising=False)
+    text = SHARED.replace("recipients_secret: MY_EMAIL", "recipients: []")
+    # Without this guard the friend's alerts would land in the global inbox.
+    with pytest.raises(ConfigError, match="FRIEND_EMAIL"):
+        load_config(write(tmp_path, text))
