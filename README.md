@@ -95,6 +95,66 @@ Bundan sonra **her 15 dakikada bir** kendi kendine çalışır.
 
 ---
 
+## Zamanlanmış tarama çalışmıyorsa: dışarıdan tetikleme
+
+GitHub'ın cron zamanlayıcısı garantili değildir. Yeni depolarda saatlerce hiç
+devreye girmediği, yoğun saatlerde turları atladığı olur. Actions sayfasındaki
+**Event** menüsünde `schedule` seçeneği hiç belirmiyorsa durum budur.
+
+Çözüm: ücretsiz bir cron servisinden GitHub'a tetikleme isteği göndermek.
+GitHub'ın kendi zamanlayıcısına hiç bağlı kalmazsın.
+
+### 1. Erişim anahtarı (token) oluştur
+
+<https://github.com/settings/personal-access-tokens/new>
+
+- **Token name:** `ilan-tetikleyici`
+- **Expiration:** 90 gün (süresi dolunca yenilemen gerekir)
+- **Repository access:** *Only select repositories* → `linkedin_job_hunter`
+- **Permissions → Repository permissions → Actions:** `Read and write`
+  (Başka hiçbir izin verme.)
+- **Generate token** → çıkan `github_pat_...` değerini kopyala.
+
+Bu anahtar yalnızca bu depodaki workflow'ları çalıştırabilir. Kod okuyamaz,
+değiştiremez, secret'lara erişemez. En kötü ihtimalle biri fazladan tarama
+başlatır.
+
+### 2. cron-job.org'da görev oluştur
+
+<https://console.cron-job.org> (ücretsiz hesap yeterli) → **Create cronjob**
+
+| Alan | Değer |
+|---|---|
+| Title | `LinkedIn ilan taraması` |
+| URL | `https://api.github.com/repos/<kullanıcı>/<repo>/actions/workflows/job-hunt.yml/dispatches` |
+| Schedule | Every 15 minutes |
+
+**Advanced** bölümünde:
+
+- **Request method:** `POST`
+- **Request body:** `{"ref":"main"}`
+- **Headers:**
+  ```
+  Accept: application/vnd.github+json
+  Authorization: Bearer github_pat_BURAYA_ANAHTARIN
+  X-GitHub-Api-Version: 2022-11-28
+  Content-Type: application/json
+  ```
+
+**Create** ile kaydet. Başarılı istek **204** döner (gövde boş olur, normaldir).
+
+### 3. Doğrula
+
+15-20 dakika sonra Actions sayfasında yeni çalışmalar görünmeli. Tetikleyicileri
+yine `workflow_dispatch` yazar — cron-job.org, elle basmışsın gibi tetikler.
+
+`.github/workflows/job-hunt.yml` içindeki `schedule` satırını silme: GitHub'ın
+zamanlayıcısı bir gün devreye girerse iki kaynak birlikte çalışır. Bu sorun
+yaratmaz — `concurrency` ayarı turların üst üste binmesini, kayıt dosyası da
+aynı ilanın iki kez gönderilmesini zaten engelliyor.
+
+---
+
 ## Kendi bilgisayarında çalıştırmak (opsiyonel)
 
 ```bash
