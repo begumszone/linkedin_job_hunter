@@ -137,6 +137,11 @@ searches:
     enabled: true
 ```
 
+> **Önemli:** Yeni bir `recipients_secret` eklediğinde, aynı secret'ı
+> `.github/workflows/job-hunt.yml` dosyasındaki `env:` listesine de eklemelisin
+> (`AYSE_EMAIL: ${{ secrets.AYSE_EMAIL }}` gibi). GitHub secret'ları
+> kendiliğinden uygulamaya geçirmez; unutulursa tarama hata verip durur.
+
 Dağıtım kuralı: bir aramanın kendi alıcısı varsa sonuçlar **yalnızca** ona
 gider; yoksa `notifications.email.recipients` / `EMAIL_RECIPIENTS`'taki genel
 adreslere düşer. Yani kimse başkasının ilanlarını almaz ve kimse diğerinin

@@ -120,9 +120,12 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
             # search's alerts to the wrong person.
             raise ConfigError(
                 f"'{name}' araması alıcılarını '{secret_name}' secret'ından "
-                f"okuyor ama o secret tanımlı değil ya da boş. GitHub'da "
-                f"Settings > Secrets and variables > Actions altına ekle, "
-                f"veya aramayı geçici olarak 'enabled: false' yap."
+                f"okuyor ama değer gelmedi. İki yeri de kontrol et: (1) secret "
+                f"GitHub'da tanımlı mı (Settings > Secrets and variables > "
+                f"Actions), (2) .github/workflows/job-hunt.yml içindeki env "
+                f"listesine '{secret_name}: ${{{{ secrets.{secret_name} }}}}' "
+                f"satırı eklenmiş mi. Alternatif olarak aramayı geçici "
+                f"kapatmak için 'enabled: false' yap."
             )
         for address in from_secret:
             if address not in recipients:

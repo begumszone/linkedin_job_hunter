@@ -41,6 +41,10 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           SMTP_FROM: ${{ secrets.SMTP_FROM }}
           EMAIL_RECIPIENTS: ${{ secrets.EMAIL_RECIPIENTS }}
+          # config.yaml'da bir aramaya 'recipients_secret' eklediğinde o
+          # secret'ı buraya da yazmalısın; GitHub secret'ları kendiliğinden
+          # uygulamaya geçirmiyor.
+          MARKETING_EMAILS: ${{ secrets.MARKETING_EMAILS }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
           python -m job_hunter \
