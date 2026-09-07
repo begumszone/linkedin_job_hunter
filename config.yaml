@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------------------
+# LinkedIn Job Hunter ayarları
+#
+# Değiştireceğin tek dosya burası. Şifre/token buraya YAZILMAZ; onlar
+# GitHub Actions secrets içinde durur (README'ye bak).
+# ---------------------------------------------------------------------------
+
+searches:
+  - name: "Finans / FP&A"
+    # En fazla 5 anahtar kelime.
+    keywords:
+      - finans
+      - FP&A
+      - IFRS
+    # Konum: LinkedIn'in tanıdığı herhangi bir yazım. Boş bırakırsan her yer.
+    location: "İstanbul, Türkiye"
+    # any = kelimelerden herhangi biri geçsin (önerilen)
+    # all = kelimelerin hepsi birden geçsin
+    match_mode: any
+    # Bu kelimeler ilan başlığında geçiyorsa ilanı hiç gönderme.
+    exclude:
+      - stajyer
+      - intern
+    # Sadece uzaktan çalışma ilanları için true yap.
+    remote_only: false
+    # Bu aramanın sonuçları ayrıca şu adreslere de gitsin (arkadaşların için).
+    recipients: []
+
+  # İkinci bir arama örneği — gerek yoksa bu bloğu silebilirsin.
+  # - name: "Uzaktan denetim"
+  #   keywords: ["internal audit", "denetim"]
+  #   location: "Türkiye"
+  #   match_mode: any
+  #   remote_only: true
+  #   recipients: ["arkadasim@example.com"]
+
+notifications:
+  email:
+    enabled: true
+    # Bildirimlerin gideceği adres(ler).
+    recipients:
+      - "senin-adresin@example.com"
+    subject_prefix: "[İlan]"
+    # Gmail dışında bir sağlayıcı kullanıyorsan host/port'u SMTP_HOST ve
+    # SMTP_PORT secret'ları ile de verebilirsin.
+    host: "smtp.gmail.com"
+    port: 587
+    use_ssl: false
+
+  # ntfy.sh ile telefona anlık push. Varsayılan olarak KAPALI.
+  # Dikkat: ntfy.sh'te konu adı şifre gibidir; konu adını bilen herkes
+  # mesajları okuyabilir. Açacaksan tahmin edilemeyecek bir isim seç.
+  ntfy:
+    enabled: false
+    server: "https://ntfy.sh"
+    topic: ""          # ya da NTFY_TOPIC secret'ı ile ver
+    priority: default
+
+settings:
+  # Kaç saat geriye bakılsın (LinkedIn'in "Son 24 saat" filtresi).
+  hours: 24
+  # LinkedIn'i yormamak için istekler arası bekleme (saniye).
+  request_delay_seconds: 3
+  # Daha önce bildirilen ilanların tutulduğu dosya.
+  state_file: "state/seen_jobs.json"
+  # Bu kadar gün sonra kayıttan düşer (dosya şişmesin diye).
+  forget_after_days: 30

@@ -1,0 +1,65 @@
+name: LinkedIn ilan taraması
+
+on:
+  schedule:
+    # Her 10 dakikada bir. GitHub'ın zamanlayıcısı yoğunken çalışmalar
+    # birkaç dakika gecikebilir; pratikte aralık 10-20 dakika arasında oynar.
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Bildirim gönderme, sadece bulunanları logla"
+        type: boolean
+        default: false
+
+concurrency:
+  group: job-hunt
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # görülen ilanların kaydını repoya geri yazmak için
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Bağımlılıkları kur
+        run: pip install -r requirements.txt
+
+      - name: İlanları tara ve bildir
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          python -m job_hunter \
+            --config config.yaml \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Görülen ilanların kaydını sakla
+        if: always()
+        run: |
+          if [[ -z "$(git status --porcelain state/)" ]]; then
+            echo "Kayıt dosyasında değişiklik yok."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/
+          git commit -m "chore: görülen ilanların kaydını güncelle [skip ci]"
+          for delay in 0 2 4 8; do
+            sleep "$delay"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+          done
+          echo "Kayıt dosyası push edilemedi." >&2
+          exit 1
