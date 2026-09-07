@@ -35,6 +35,10 @@ searches:
     remote_only: false
     # Bu aramanın sonuçları ayrıca şu adreslere de gitsin (arkadaşların için).
     recipients: []
+    # Kelime başına taranacak en fazla ilan (en yeniden eskiye). 10 dakikada
+    # bir tarandığı için 25 fazlasıyla yeterli; büyütmek LinkedIn'e giden
+    # istek sayısını artırır.
+    max_results: 25
 
   # İkinci bir arama örneği — gerek yoksa bu bloğu silebilirsin.
   # - name: "Uzaktan denetim"

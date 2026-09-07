@@ -26,7 +26,7 @@ class Search:
     exclude: list[str] = field(default_factory=list)
     remote_only: bool = False
     recipients: list[str] = field(default_factory=list)
-    max_results: int = 50
+    max_results: int = 25
 
 
 @dataclass
@@ -104,7 +104,7 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
         exclude=[term.strip() for term in _as_list(raw.get("exclude")) if term.strip()],
         remote_only=bool(raw.get("remote_only", False)),
         recipients=_as_list(raw.get("recipients")),
-        max_results=int(raw.get("max_results", 50)),
+        max_results=int(raw.get("max_results", 25)),
     )
 
 

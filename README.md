@@ -197,8 +197,9 @@ kayıt, sıfır ek servis.
   bu yüzden makul üst sınır.
 - LinkedIn sayfa yapısını değiştirirse tarama boş dönebilir. Bu durumda log'a
   `hiç ilan kartı ayrıştırılamadı` uyarısı düşer — sessizce sus pus olmaz.
-- Eşleşme **ilan başlığı ve şirket adı** üzerinden yapılır; ilan metninin tamamı
-  okunmaz (bu, ilan başına ayrı bir istek demek olurdu).
+- Eşleşme yalnızca **ilan başlığı** üzerinden yapılır; ilan metninin tamamı
+  okunmaz (bu, ilan başına ayrı bir istek demek olurdu). Şirket adına bakılmaz:
+  aksi halde adında "Finans" geçen bir bankanın her ilanı eşleşirdi.
 - Anahtar kelime, kelimenin başından eşleşir: `finans` yazınca "Finansal
   Raporlama" da gelir, ama alakasız bir kelimenin ortasındaki harf dizisi
   eşleşmez. Büyük/küçük harf ve Türkçe karakter farkı önemsizdir

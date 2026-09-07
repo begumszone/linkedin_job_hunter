@@ -45,8 +45,10 @@ def collect_new_jobs(config: Config, store: SeenStore) -> list[Job]:
             for job in results:
                 if job.id in store or job.id in seen_this_run:
                     continue
+                # Title only: a bank called "Türkiye Finans" would otherwise
+                # match every posting it publishes, whatever the role.
                 hits = matches(
-                    f"{job.title} {job.company}",
+                    job.title,
                     search.keywords,
                     mode=search.match_mode,
                     exclude=search.exclude,

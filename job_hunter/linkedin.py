@@ -154,7 +154,7 @@ class LinkedInClient:
         keywords: str,
         location: str = "",
         hours: int = 24,
-        max_results: int = 50,
+        max_results: int = 25,
         remote_only: bool = False,
     ) -> list[Job]:
         """Return postings for one query, newest first."""
