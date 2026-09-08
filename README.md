@@ -148,10 +148,10 @@ başlatır.
 15-20 dakika sonra Actions sayfasında yeni çalışmalar görünmeli. Tetikleyicileri
 yine `workflow_dispatch` yazar — cron-job.org, elle basmışsın gibi tetikler.
 
-`.github/workflows/job-hunt.yml` içindeki `schedule` satırını silme: GitHub'ın
-zamanlayıcısı bir gün devreye girerse iki kaynak birlikte çalışır. Bu sorun
-yaratmaz — `concurrency` ayarı turların üst üste binmesini, kayıt dosyası da
-aynı ilanın iki kez gönderilmesini zaten engelliyor.
+Workflow'da GitHub'ın kendi `schedule` tetikleyicisi **bilerek yok**. Bu depoda
+saatlerce hiç çalışmadı, sonra devreye girdi ve ikinci bir tetikleyici hâline
+geldi; iki kaynak birden tetikleyince turlar üst üste binip kayıt dosyasında
+çakışmaya yol açtı. Tek tetikleyici (cron-job.org) daha öngörülebilir.
 
 ---
 

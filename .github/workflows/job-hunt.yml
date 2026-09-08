@@ -1,12 +1,10 @@
 name: LinkedIn ilan taraması
 
+# Tarama, cron-job.org'dan gelen workflow_dispatch istekleriyle 15 dakikada bir
+# tetikleniyor (kurulumu README'de). GitHub'ın kendi 'schedule' tetikleyicisi
+# bilerek kullanılmıyor: saatlerce hiç çalışmadı, sonra devreye girip ikinci bir
+# tetikleyici hâline geldi ve turlar üst üste binmeye başladı.
 on:
-  schedule:
-    # Her 15 dakikada bir. Tarama 20 anahtar kelimeyle ~3,5 dakika sürüyor;
-    # daha sık çalıştırmak turları üst üste bindirir ve LinkedIn'e giden istek
-    # sayısını gereksiz artırır. GitHub'ın zamanlayıcısı ayrıca garantili
-    # değildir, yoğunken çalışmaları geciktirir.
-    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -60,13 +58,35 @@ jobs:
             echo "Kayıt dosyasında değişiklik yok."
             exit 0
           fi
+
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/
-          git commit -m "chore: görülen ilanların kaydını güncelle [skip ci]"
-          for delay in 0 2 4 8; do
-            sleep "$delay"
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+
+          # Bu turun kaydını sakla: aşağıda depoyu uzak sürüme sıfırlayacağız.
+          cp state/seen_jobs.json "${RUNNER_TEMP}/mine.json"
+
+          for attempt in 1 2 3 4; do
+            git fetch -q origin "${GITHUB_REF_NAME}"
+            git reset -q --hard "origin/${GITHUB_REF_NAME}"
+
+            # Başka bir tur bu arada kendi kaydını yazmış olabilir. JSON'u
+            # rebase etmek çakışır; iki turun gördüğü ilanların birleşimi ise
+            # her zaman doğru cevaptır.
+            python scripts/merge_state.py \
+              "${RUNNER_TEMP}/mine.json" state/seen_jobs.json state/seen_jobs.json
+
+            if [[ -z "$(git status --porcelain state/)" ]]; then
+              echo "Kayıt zaten güncel."
+              exit 0
+            fi
+
+            git add state/
+            git commit -q -m "chore: görülen ilanların kaydını güncelle [skip ci]"
+            if git push -q origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
           done
+
           echo "Kayıt dosyası push edilemedi." >&2
           exit 1
