@@ -304,6 +304,10 @@
       "first_seen": "2026-09-08T07:04:12+00:00",
       "title": "Finans Uzmanı"
     },
+    "4462276402": {
+      "first_seen": "2026-09-08T09:04:22+00:00",
+      "title": "Satış ve Pazarlama Sorumlusu"
+    },
     "4462278099": {
       "first_seen": "2026-09-08T07:18:49+00:00",
       "title": "Satış, Pazarlama ve Marka Yöneticisi"
@@ -316,9 +320,21 @@
       "first_seen": "2026-09-08T08:04:11+00:00",
       "title": "Mali İşler & Finansman Müdürü"
     },
+    "4462282326": {
+      "first_seen": "2026-09-08T09:04:22+00:00",
+      "title": "Finans ve Dış Ticaret Operasyonları Asistanı (Yetiştirilmek Üzere)"
+    },
+    "4462288389": {
+      "first_seen": "2026-09-08T09:04:22+00:00",
+      "title": "Sosyal Medya Pazarlama"
+    },
     "4462295211": {
       "first_seen": "2026-09-08T08:33:57+00:00",
       "title": "Pazarlama Müdürü"
+    },
+    "4462295351": {
+      "first_seen": "2026-09-08T09:04:22+00:00",
+      "title": "Marka Pazarlama Uzmanı"
     },
     "4462298133": {
       "first_seen": "2026-09-08T08:18:48+00:00",
@@ -417,5 +433,5 @@
       "title": "Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-09-08T08:33:58+00:00"
+  "updated_at": "2026-09-08T09:04:23+00:00"
 }
