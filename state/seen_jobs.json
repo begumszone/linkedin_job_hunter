@@ -480,6 +480,14 @@
       "first_seen": "2026-09-09T08:18:53+00:00",
       "title": "Marketing Specialist"
     },
+    "4462599143": {
+      "first_seen": "2026-09-09T08:49:01+00:00",
+      "title": "Satış ve Pazarlama Temsilcisi"
+    },
+    "4462599380": {
+      "first_seen": "2026-09-09T08:49:01+00:00",
+      "title": "Marketing Manager"
+    },
     "4462901935": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Bağımsız Denetim ve Yurtdışı Raporlama Uzmanı/Kıdemli Uzmanı"
@@ -539,6 +547,14 @@
     "4463015146": {
       "first_seen": "2026-09-09T07:48:52+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
+    },
+    "4463017375": {
+      "first_seen": "2026-09-09T08:49:01+00:00",
+      "title": "Senior Performance Marketing Specialist"
+    },
+    "4463018472": {
+      "first_seen": "2026-09-09T08:49:01+00:00",
+      "title": "Stok ve Crm Sorumlusu"
     },
     "4463020138": {
       "first_seen": "2026-09-09T07:48:52+00:00",
@@ -669,5 +685,5 @@
       "title": "Satış ve Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-09-09T08:34:02+00:00"
+  "updated_at": "2026-09-09T08:49:01+00:00"
 }
