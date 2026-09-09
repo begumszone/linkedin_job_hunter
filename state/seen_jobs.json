@@ -1,5 +1,9 @@
 {
   "jobs": {
+    "3959375972": {
+      "first_seen": "2026-09-09T11:18:57+00:00",
+      "title": "Satış Pazarlama Sorumlusu"
+    },
     "4287113915": {
       "first_seen": "2026-09-07T12:42:10+00:00",
       "title": "Dijital Pazarlama & Saha Satış Uzmanı (Yazılım / SaaS / ERP)"
@@ -741,5 +745,5 @@
       "title": "Satış ve Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-09-09T10:49:04+00:00"
+  "updated_at": "2026-09-09T11:18:57+00:00"
 }
