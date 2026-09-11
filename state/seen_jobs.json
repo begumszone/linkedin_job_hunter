@@ -1200,6 +1200,10 @@
       "first_seen": "2026-09-11T14:18:56+00:00",
       "title": "Finance Manager"
     },
+    "4464226146": {
+      "first_seen": "2026-09-11T16:48:54+00:00",
+      "title": "Muhasebe ve Finans Uzmanı"
+    },
     "4464307042": {
       "first_seen": "2026-09-07T14:30:21+00:00",
       "title": "İş Makinası Satış ve Pazarlama Uzmanı"
@@ -1411,7 +1415,11 @@
     "4466311057": {
       "first_seen": "2026-09-11T13:34:09+00:00",
       "title": "Treasury Specialist"
+    },
+    "4466324612": {
+      "first_seen": "2026-09-11T16:48:54+00:00",
+      "title": "Influencer marketing"
     }
   },
-  "updated_at": "2026-09-11T15:18:53+00:00"
+  "updated_at": "2026-09-11T16:48:55+00:00"
 }
