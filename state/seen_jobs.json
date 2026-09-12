@@ -1240,6 +1240,10 @@
       "first_seen": "2026-09-11T14:18:56+00:00",
       "title": "Finance Manager"
     },
+    "4464214196": {
+      "first_seen": "2026-09-12T14:48:54+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4464226146": {
       "first_seen": "2026-09-11T16:48:54+00:00",
       "title": "Muhasebe ve Finans Uzmanı"
@@ -1517,5 +1521,5 @@
       "title": "Finance Manager"
     }
   },
-  "updated_at": "2026-09-12T14:34:03+00:00"
+  "updated_at": "2026-09-12T14:48:54+00:00"
 }
