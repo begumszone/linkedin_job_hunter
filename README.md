@@ -254,6 +254,30 @@ kayıt, sıfır ek servis.
 
 ---
 
+## GitHub kesintilerinde ne olur
+
+Tarama aynı anda iki kez çalışmasın diye workflow'da bir kilit var
+(`concurrency`). Normalde görünmez: tarama ~3,5 dakika sürer, tetikleme aralığı
+15 dakikadır, çakışma olmaz.
+
+GitHub'ın Actions sunucuları yavaşladığında bu kilidin bir yan etkisi ortaya
+çıkar: iş sıraya girer, başlayamadan bir sonraki tetikleme gelir ve **bekleyen
+iş iptal edilir**. Sıra bekleme süresi tetikleme aralığını aşarsa hiçbir tarama
+başlayamaz. 13 Eylül 2026'daki GitHub kesintisinde bu yaşandı.
+
+Kilidi kaldırmak çözüm değil, daha kötüsünü yapar: biriken işler aynı anda
+başlar, hepsi aynı "yeni ilan" listesini görür ve herkese **aynı e-postayı
+defalarca** gönderir. Şimdiki davranış güvenli tarafta hata veriyor — tarama
+yapılmaz ama yanlış bir şey de olmaz, kayıt bozulmaz.
+
+Kesinti uzarsa yapılabilecek geçici müdahale: cron-job.org'da aralığı 15
+dakikadan 45 dakikaya çıkarmak. Böylece bekleyen iş iptal edilmeden başlamaya
+fırsat bulur. Kesinti bitince 15 dakikaya geri alınır.
+
+Kesinti **24 saati** aşarsa, bu sürede yayınlanan ilanlar "son 24 saat"
+penceresinden düşer ve bir daha görünmez. O durumda `settings.hours` değerini
+geçici olarak 48 yapmak kaçanları toplar.
+
 ## Bilinmesi gerekenler
 
 - **LinkedIn'in resmî bir iş ilanı API'si yok.** Bu araç, LinkedIn'in giriş
