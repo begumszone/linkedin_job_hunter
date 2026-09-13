@@ -13,7 +13,12 @@ on:
         default: false
 
 concurrency:
-  group: job-hunt
+  # Kilit adı: 13 Eylül 2026'daki GitHub kesintisinde bir çalışma "queued"
+  # durumunda takılı kaldı, iptal komutlarını da reddetti ve eski kilit adını
+  # süresiz tuttu; arkasından gelen her tarama sıraya girip iptal edildi. Adı
+  # değiştirmek yeni taramaları o hayalet işten kurtarır. Böyle bir durum
+  # tekrarlarsa yapılacak şey yine budur: sondaki sayıyı artır.
+  group: job-hunt-2
   cancel-in-progress: false
 
 permissions:
@@ -22,6 +27,9 @@ permissions:
 jobs:
   hunt:
     runs-on: ubuntu-latest
+    # Asılı kalan bir tarama kilidi süresiz tutmasın: normalde ~3,5 dakika
+    # sürüyor, 15 dakikada kesilmesi güvenli bir üst sınır.
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
