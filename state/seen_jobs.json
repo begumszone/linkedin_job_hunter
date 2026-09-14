@@ -144,6 +144,10 @@
       "first_seen": "2026-09-11T14:18:56+00:00",
       "title": "Finance Manager"
     },
+    "4438726048": {
+      "first_seen": "2026-09-14T07:33:58+00:00",
+      "title": "Kurumsal Finansman Yönetmeni"
+    },
     "4439021929": {
       "first_seen": "2026-09-12T12:04:16+00:00",
       "title": "Business Controlling Supervisor"
@@ -1633,5 +1637,5 @@
       "title": "Finans Yöneticisi"
     }
   },
-  "updated_at": "2026-09-14T06:49:20+00:00"
+  "updated_at": "2026-09-14T07:33:59+00:00"
 }
