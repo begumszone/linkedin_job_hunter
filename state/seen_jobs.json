@@ -152,6 +152,10 @@
       "first_seen": "2026-09-12T12:04:16+00:00",
       "title": "Business Controlling Supervisor"
     },
+    "4440107602": {
+      "first_seen": "2026-09-14T08:04:21+00:00",
+      "title": "AI Engineer, Performance Marketing"
+    },
     "4440489310": {
       "first_seen": "2026-09-09T12:34:13+00:00",
       "title": "Customer Marketing Manager"
@@ -163,6 +167,10 @@
     "4443378946": {
       "first_seen": "2026-09-08T21:34:07+00:00",
       "title": "Senior Budget & Reporting Specialist"
+    },
+    "4444131448": {
+      "first_seen": "2026-09-14T08:04:21+00:00",
+      "title": "Pazarlama ve Marka Uzmanı"
     },
     "4445319561": {
       "first_seen": "2026-09-07T12:42:10+00:00",
@@ -207,6 +215,10 @@
     "4452561918": {
       "first_seen": "2026-09-10T14:04:30+00:00",
       "title": "Budget Control and Reporting Assistant Manager"
+    },
+    "4452569017": {
+      "first_seen": "2026-09-14T08:04:21+00:00",
+      "title": "Software Engineer, Performance Marketing"
     },
     "4453696549": {
       "first_seen": "2026-09-09T09:48:57+00:00",
@@ -1164,6 +1176,10 @@
       "first_seen": "2026-09-11T08:34:11+00:00",
       "title": "İnsan Kaynakları Veri Analitiği ve Raporlama Müdürü"
     },
+    "4463967567": {
+      "first_seen": "2026-09-14T08:04:21+00:00",
+      "title": "Pazarlama Personeli"
+    },
     "4463968219": {
       "first_seen": "2026-09-11T10:04:14+00:00",
       "title": "Assistant Marketing Manager – Turkey"
@@ -1464,6 +1480,22 @@
       "first_seen": "2026-09-14T04:48:53+00:00",
       "title": "Marketing Manager"
     },
+    "4464763866": {
+      "first_seen": "2026-09-14T08:04:21+00:00",
+      "title": "Social Media And Marketing Specialist"
+    },
+    "4464766556": {
+      "first_seen": "2026-09-14T08:04:21+00:00",
+      "title": "Satış ve Pazarlama Temsilcisi"
+    },
+    "4464770626": {
+      "first_seen": "2026-09-14T08:04:21+00:00",
+      "title": "Kurumsal İletişim Sorumlusu"
+    },
+    "4464773753": {
+      "first_seen": "2026-09-14T08:04:21+00:00",
+      "title": "Finans Uzmanı"
+    },
     "4464778538": {
       "first_seen": "2026-09-14T06:49:20+00:00",
       "title": "Etkinlik ve Pazarlama Uzmanı"
@@ -1637,5 +1669,5 @@
       "title": "Finans Yöneticisi"
     }
   },
-  "updated_at": "2026-09-14T07:33:59+00:00"
+  "updated_at": "2026-09-14T08:04:21+00:00"
 }
