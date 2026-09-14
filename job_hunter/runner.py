@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import logging
 
-from .config import Config
+from .config import Config, Search
+from .freshness import is_recent
 from .linkedin import Job, LinkedInClient, RateLimited, build_query
 from .matching import matches
+from .text import tokenize
 from .notifiers.email_notifier import EmailError, send_email
 from .notifiers.ntfy_notifier import send_ntfy
 from .storage import SeenStore
@@ -22,6 +24,8 @@ def collect_new_jobs(config: Config, store: SeenStore) -> list[Job]:
     )
     new_jobs: list[Job] = []
     seen_this_run: set[str] = set()
+    dropped_old = 0
+    dropped_far = 0
 
     for search in config.active_searches():
         for query in build_query(search.keywords, search.match_mode):
@@ -45,6 +49,16 @@ def collect_new_jobs(config: Config, store: SeenStore) -> list[Job]:
             for job in results:
                 if job.id in store or job.id in seen_this_run:
                     continue
+
+                # LinkedIn pads thin result sets with older, far-away postings
+                # that its own filters should have excluded, so both are
+                # re-checked here instead of being taken on trust.
+                if not is_recent(job.posted_at, job.posted_label, config.settings.hours):
+                    dropped_old += 1
+                    continue
+                if is_excluded_location(job.location, search.exclude_locations):
+                    dropped_far += 1
+                    continue
                 # Title only: a bank called "Türkiye Finans" would otherwise
                 # match every posting it publishes, whatever the role.
                 hits = matches(
@@ -60,7 +74,21 @@ def collect_new_jobs(config: Config, store: SeenStore) -> list[Job]:
                 seen_this_run.add(job.id)
                 new_jobs.append(job)
 
+    if dropped_old or dropped_far:
+        log.info(
+            "Elenen: %d ilan pencereden eski, %d ilan konum dışı",
+            dropped_old,
+            dropped_far,
+        )
     return new_jobs
+
+
+def is_excluded_location(location: str, terms: list[str]) -> bool:
+    """True when the posting's location contains one of the excluded terms."""
+    if not location or not terms:
+        return False
+    haystack = tokenize(location)
+    return any(tokenize(term).strip() in haystack for term in terms if term.strip())
 
 
 def notify(config: Config, jobs: list[Job]) -> list[str]:

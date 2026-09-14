@@ -38,6 +38,23 @@ searches:
     # Kelime başına taranacak en fazla ilan (en yeniden eskiye). 10 dakikada
     # bir tarandığı için 25 fazlasıyla yeterli; büyütmek LinkedIn'e giden
     # istek sayısını artırır.
+    # LinkedIn, sonuç az olduğunda listeyi yurt dışından ilanlarla dolduruyor.
+    # Konumunda bu kelimelerden biri geçen ilanlar elenir.
+    exclude_locations:
+      - Romanya
+      - Romania
+      - Çin
+      - China
+      - Hindistan
+      - India
+      - Polonya
+      - Poland
+      - Almanya
+      - Germany
+      - Birleşik Krallık
+      - United Kingdom
+      - Amerika
+      - United States
     max_results: 25
 
   - name: "Pazarlama / CRM"
@@ -60,6 +77,23 @@ searches:
     # Adresler repoda durmasın diye secret'tan okunuyor.
     # GitHub'da MARKETING_EMAILS adıyla, iki adres virgülle ayrılmış olarak tanımlı.
     recipients_secret: MARKETING_EMAILS
+    # LinkedIn, sonuç az olduğunda listeyi yurt dışından ilanlarla dolduruyor.
+    # Konumunda bu kelimelerden biri geçen ilanlar elenir.
+    exclude_locations:
+      - Romanya
+      - Romania
+      - Çin
+      - China
+      - Hindistan
+      - India
+      - Polonya
+      - Poland
+      - Almanya
+      - Germany
+      - Birleşik Krallık
+      - United Kingdom
+      - Amerika
+      - United States
     max_results: 25
     # İş bulunca aramayı silme, burayı false yap.
     enabled: true

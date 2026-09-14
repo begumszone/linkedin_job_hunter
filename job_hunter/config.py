@@ -28,6 +28,7 @@ class Search:
     recipients: list[str] = field(default_factory=list)
     max_results: int = 25
     enabled: bool = True
+    exclude_locations: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -141,6 +142,9 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
         recipients=recipients,
         max_results=int(raw.get("max_results", 25)),
         enabled=bool(raw.get("enabled", True)),
+        exclude_locations=[
+            term.strip() for term in _as_list(raw.get("exclude_locations")) if term.strip()
+        ],
     )
 
 

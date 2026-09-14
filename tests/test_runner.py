@@ -84,3 +84,37 @@ def test_each_address_only_receives_its_own_search(monkeypatch):
         "me@example.com": ["Finans Uzmanı"],
         "friend@example.com": ["Denetim Uzmanı"],
     }
+
+
+def test_postings_outside_the_time_window_are_dropped(monkeypatch, tmp_path):
+    from datetime import date, timedelta
+
+    old = (date.today() - timedelta(days=5)).isoformat()
+    fresh = date.today().isoformat()
+    jobs = [job("1", "Finans Uzmanı"), job("2", "Finans Müdürü")]
+    jobs[0].posted_at, jobs[0].posted_label = old, "5 gün önce"
+    jobs[1].posted_at, jobs[1].posted_label = fresh, "1 saat önce"
+    stub_client(monkeypatch, jobs)
+
+    found = runner.collect_new_jobs(make_config(), SeenStore(tmp_path / "s.json"))
+    assert [j.id for j in found] == ["2"]
+
+
+def test_excluded_locations_are_dropped(monkeypatch, tmp_path):
+    jobs = [job("1", "Finans Uzmanı"), job("2", "Finans Müdürü")]
+    jobs[0].location = "Bükreş, Romanya"
+    jobs[1].location = "Kadıköy"
+    stub_client(monkeypatch, jobs)
+
+    config = make_config(exclude_locations=["Romanya"])
+    found = runner.collect_new_jobs(config, SeenStore(tmp_path / "s.json"))
+    assert [j.id for j in found] == ["2"]
+
+
+def test_location_filter_is_off_when_no_terms_are_configured(monkeypatch, tmp_path):
+    jobs = [job("1", "Finans Uzmanı")]
+    jobs[0].location = "Bükreş, Romanya"
+    stub_client(monkeypatch, jobs)
+
+    found = runner.collect_new_jobs(make_config(), SeenStore(tmp_path / "s.json"))
+    assert [j.id for j in found] == ["1"]
