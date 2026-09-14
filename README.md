@@ -291,6 +291,19 @@ geçici olarak 48 yapmak kaçanları toplar.
   değildir: yoğun saatlerde çalışmalar gecikir, bazı turlar hiç çalışmayabilir.
   Yeni depolarda zamanlayıcının devreye girmesi saatler sürebiliyor; bu süre
   boyunca Actions sekmesinden **Run workflow** ile elle çalıştırabilirsin.
+- **LinkedIn'in kendi filtreleri güvenilir değil.** Bir anahtar kelime için
+  aranan konumda son 24 saatte az ilan varsa, LinkedIn boş sayfa döndürmek
+  yerine listeyi yurt dışından ve günler öncesinden ilanlarla dolduruyor; kendi
+  tarih ve konum filtrelerini yok sayıyor. Bu yüzden gelen her ilanın yaşı ve
+  konumu yerelde bir kez daha kontrol edilir: pencereden eski olanlar ve
+  `exclude_locations` listesindeki ülkelerden gelenler elenir. Kaç ilanın
+  elendiği log'a yazılır.
+- Yaş kontrolü ilan kartındaki tarihe bakar. O tarihte saat bilgisi olmadığı
+  için bir gün tolerans bırakılmıştır: 24 saatlik pencerede 48 saate kadar ilan
+  geçebilir, ama "5 gün önce" olanlar geçemez.
+- Konum elemesi bir **kara listedir**, kusursuz değil: listede olmayan bir
+  ülkeden ilan gelirse geçer. Yeni bir ülke görürsen `config.yaml` içindeki
+  `exclude_locations` listesine ekle.
 - LinkedIn sayfa yapısını değiştirirse tarama boş dönebilir. Bu durumda log'a
   `hiç ilan kartı ayrıştırılamadı` uyarısı düşer — sessizce sus pus olmaz.
 - Eşleşme yalnızca **ilan başlığı** üzerinden yapılır; ilan metninin tamamı
