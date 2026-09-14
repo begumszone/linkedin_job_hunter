@@ -1452,6 +1452,10 @@
       "first_seen": "2026-09-12T11:34:00+00:00",
       "title": "Bursa Satış ve Pazarlama Uzmanı"
     },
+    "4464705563": {
+      "first_seen": "2026-09-14T12:19:03+00:00",
+      "title": "Kurumsal İletişim ve Pazarlama Uzmanı"
+    },
     "4464709208": {
       "first_seen": "2026-09-12T13:34:05+00:00",
       "title": "Pazarlama Yetkilisi (Mersin)"
@@ -1599,6 +1603,14 @@
     "4465201578": {
       "first_seen": "2026-09-14T12:04:43+00:00",
       "title": "Finance & Accounting Specialist"
+    },
+    "4465202569": {
+      "first_seen": "2026-09-14T12:19:03+00:00",
+      "title": "Pazarlama ve Satış Sorumlusu"
+    },
+    "4465204579": {
+      "first_seen": "2026-09-14T12:19:03+00:00",
+      "title": "Marka Uzmanı"
     },
     "4465206008": {
       "first_seen": "2026-09-14T10:19:34+00:00",
@@ -1761,5 +1773,5 @@
       "title": "Dijital Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-09-14T12:04:44+00:00"
+  "updated_at": "2026-09-14T12:19:03+00:00"
 }
