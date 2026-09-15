@@ -268,6 +268,10 @@
       "first_seen": "2026-09-11T12:48:54+00:00",
       "title": "Treasury Manager"
     },
+    "4455234464": {
+      "first_seen": "2026-09-15T14:04:21+00:00",
+      "title": "Finance Executive"
+    },
     "4455257977": {
       "first_seen": "2026-09-15T09:34:12+00:00",
       "title": "Muhasebe ve Raporlama Uzman Yardımcısı / Uzmanı"
@@ -2111,7 +2115,11 @@
     "4467740026": {
       "first_seen": "2026-09-15T11:48:51+00:00",
       "title": "Trade Finance Asistant Manager"
+    },
+    "4467750485": {
+      "first_seen": "2026-09-15T14:04:21+00:00",
+      "title": "Finance Associate"
     }
   },
-  "updated_at": "2026-09-15T13:19:04+00:00"
+  "updated_at": "2026-09-15T14:04:21+00:00"
 }
