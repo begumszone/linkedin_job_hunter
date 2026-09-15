@@ -1788,13 +1788,25 @@
       "first_seen": "2026-09-15T07:19:02+00:00",
       "title": "Dijital Pazarlama Yöneticisi"
     },
+    "4465514930": {
+      "first_seen": "2026-09-15T10:48:58+00:00",
+      "title": "Müşteri Deneyimi ve İletişim Uzmanı"
+    },
     "4465515388": {
       "first_seen": "2026-09-15T08:34:06+00:00",
       "title": "Finance Specialist"
     },
+    "4465516882": {
+      "first_seen": "2026-09-15T10:48:58+00:00",
+      "title": "Trade Finance Assistant Manager"
+    },
     "4465517506": {
       "first_seen": "2026-09-15T08:34:06+00:00",
       "title": "Pazarlama İletişimi Müdürü"
+    },
+    "4465518953": {
+      "first_seen": "2026-09-15T10:48:58+00:00",
+      "title": "(Senior) Sosyal Medya ve Dijital Pazarlama Uzmanı (2 Kişi)"
     },
     "4465519622": {
       "first_seen": "2026-09-15T09:04:24+00:00",
@@ -1819,6 +1831,10 @@
     "4465524506": {
       "first_seen": "2026-09-15T08:34:06+00:00",
       "title": "Dijital Pazarlama ve Müşteri Deneyimi Müdürü / Kıdemli Müdürü"
+    },
+    "4465524965": {
+      "first_seen": "2026-09-15T10:48:58+00:00",
+      "title": "Muhasebe ve Finans Şefi"
     },
     "4465526183": {
       "first_seen": "2026-09-15T07:34:00+00:00",
@@ -2027,7 +2043,11 @@
     "4467400189": {
       "first_seen": "2026-09-14T23:19:04+00:00",
       "title": "Marketing Communications Manager, High Power and IEC LV Motors"
+    },
+    "4467719108": {
+      "first_seen": "2026-09-15T10:48:58+00:00",
+      "title": "Senior Corporate Finance Specialist"
     }
   },
-  "updated_at": "2026-09-15T10:04:26+00:00"
+  "updated_at": "2026-09-15T10:48:59+00:00"
 }
