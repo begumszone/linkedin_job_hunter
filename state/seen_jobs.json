@@ -268,6 +268,10 @@
       "first_seen": "2026-09-11T12:48:54+00:00",
       "title": "Treasury Manager"
     },
+    "4454980341": {
+      "first_seen": "2026-09-16T06:48:51+00:00",
+      "title": "Controlling & FP&A Team Leader"
+    },
     "4455234464": {
       "first_seen": "2026-09-15T14:04:21+00:00",
       "title": "Finance Executive"
@@ -299,6 +303,10 @@
     "4456345264": {
       "first_seen": "2026-09-10T10:48:55+00:00",
       "title": "Assistant Finance Manager - Hilton Istanbul Bomonti Hotel & Conference Center"
+    },
+    "4456908749": {
+      "first_seen": "2026-09-16T06:48:51+00:00",
+      "title": "Customer Campaigns and Interactions Senior Manager – CRM"
     },
     "4457245382": {
       "first_seen": "2026-09-14T12:49:38+00:00",
@@ -1788,6 +1796,10 @@
       "first_seen": "2026-09-15T13:04:25+00:00",
       "title": "Ticari Pazarlama Uzmanı"
     },
+    "4465507348": {
+      "first_seen": "2026-09-16T06:48:51+00:00",
+      "title": "Saha Pazarlama Uzmanı"
+    },
     "4465508826": {
       "first_seen": "2026-09-15T10:04:25+00:00",
       "title": "Yurtdışı Satış Pazarlama"
@@ -2032,6 +2044,14 @@
       "first_seen": "2026-09-15T19:49:03+00:00",
       "title": "CRM Uzmanı"
     },
+    "4465951612": {
+      "first_seen": "2026-09-16T06:48:51+00:00",
+      "title": "Finansal Kontrolör"
+    },
+    "4465955534": {
+      "first_seen": "2026-09-16T06:48:51+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4465967317": {
       "first_seen": "2026-09-16T06:18:54+00:00",
       "title": "Finans ve Muhasebe Müdürü"
@@ -2197,5 +2217,5 @@
       "title": "B2B Marketing Manager - Turkey"
     }
   },
-  "updated_at": "2026-09-16T06:18:54+00:00"
+  "updated_at": "2026-09-16T06:48:51+00:00"
 }
