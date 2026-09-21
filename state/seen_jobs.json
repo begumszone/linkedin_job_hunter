@@ -2936,6 +2936,22 @@
       "first_seen": "2026-09-21T07:34:31+00:00",
       "title": "Finance Manager"
     },
+    "4467383587": {
+      "first_seen": "2026-09-21T12:20:52+00:00",
+      "title": "Pazarlama İletişimi Müdürü"
+    },
+    "4467383649": {
+      "first_seen": "2026-09-21T12:20:52+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
+    "4467390442": {
+      "first_seen": "2026-09-21T12:20:52+00:00",
+      "title": "Sales Marketing Manager"
+    },
+    "4467390509": {
+      "first_seen": "2026-09-21T12:20:52+00:00",
+      "title": "Influencer Marketing & Operations Specialist"
+    },
     "4467400189": {
       "first_seen": "2026-09-14T23:19:04+00:00",
       "title": "Marketing Communications Manager, High Power and IEC LV Motors"
@@ -2943,6 +2959,10 @@
     "4467604018": {
       "first_seen": "2026-09-21T11:49:02+00:00",
       "title": "Kurumsal İletişim Müdürü"
+    },
+    "4467605131": {
+      "first_seen": "2026-09-21T12:20:52+00:00",
+      "title": "Performance Marketing Manager - Display Channels"
     },
     "4467719108": {
       "first_seen": "2026-09-15T10:48:58+00:00",
@@ -3229,5 +3249,5 @@
       "title": "Strategic Finance and Analytics Specialist"
     }
   },
-  "updated_at": "2026-09-21T11:49:03+00:00"
+  "updated_at": "2026-09-21T12:20:52+00:00"
 }
