@@ -89,3 +89,27 @@ def test_search_stops_when_a_page_repeats_itself(monkeypatch):
 
     jobs = client.search("finans", max_results=50)
     assert len(jobs) == 10
+
+
+def test_parse_jobs_flattens_multiline_titles():
+    html = """
+<li><div class="base-card" data-entity-urn="urn:li:jobPosting:4469887235">
+  <a class="base-card__full-link" href="https://tr.linkedin.com/jobs/view/x-4469887235"></a>
+  <h3 class="base-search-card__title">Senior Associate
+Istanbul
+Full-Time</h3>
+  <h4 class="base-search-card__subtitle"><a>Fimple</a></h4>
+</div></li>"""
+    (job,) = parse_jobs(html)
+    assert job.title == "Senior Associate Istanbul Full-Time"
+    assert "\n" not in job.title
+
+
+def test_parse_jobs_collapses_non_breaking_spaces():
+    html = """
+<li><div class="base-card" data-entity-urn="urn:li:jobPosting:1">
+  <a class="base-card__full-link" href="https://tr.linkedin.com/jobs/view/x-1"></a>
+  <h3 class="base-search-card__title">Finans  Uzmanı</h3>
+</div></li>"""
+    (job,) = parse_jobs(html)
+    assert job.title == "Finans Uzmanı"

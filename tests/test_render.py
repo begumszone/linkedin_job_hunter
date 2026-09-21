@@ -39,3 +39,20 @@ def test_html_escapes_hostile_titles():
 def test_jobs_are_grouped_per_search():
     grouped = render.group_by_search([job(), job(id="2", search_name="Denetim")])
     assert sorted(grouped) == ["Denetim", "Finans"]
+
+
+def test_subject_survives_a_title_containing_newlines():
+    # LinkedIn published a title split across lines; a newline in a mail
+    # header raises ValueError and used to abort the whole run.
+    messy = "Accounting & Finance Operations Senior Associate\nIstanbul\nFull-Time"
+    line = render.subject([job(title=messy)])
+    assert "\n" not in line and "\r" not in line
+    assert "Senior Associate Istanbul Full-Time" in line
+
+
+def test_subject_can_be_used_as_a_mail_header():
+    from email.message import EmailMessage
+
+    message = EmailMessage()
+    message["Subject"] = render.subject([job(title="Uzman\nİstanbul\nTam zamanlı")])
+    assert "Uzman İstanbul Tam zamanlı" in message["Subject"]

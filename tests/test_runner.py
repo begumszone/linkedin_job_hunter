@@ -118,3 +118,32 @@ def test_location_filter_is_off_when_no_terms_are_configured(monkeypatch, tmp_pa
 
     found = runner.collect_new_jobs(make_config(), SeenStore(tmp_path / "s.json"))
     assert [j.id for j in found] == ["1"]
+
+
+def test_one_broken_recipient_does_not_block_the_others(monkeypatch):
+    mine = Search(name="Benim", keywords=["finans"], recipients=["me@example.com"])
+    theirs = Search(name="Arkadaşım", keywords=["denetim"], recipients=["friend@example.com"])
+    config = Config(
+        searches=[mine, theirs],
+        email=EmailConfig(enabled=True, recipients=[]),
+        ntfy=NtfyConfig(),
+        settings=Settings(),
+    )
+
+    delivered = []
+
+    def flaky(cfg, to, jobs):
+        if to[0] == "me@example.com":
+            raise ValueError("Header values may not contain linefeed")
+        delivered.append(to[0])
+
+    monkeypatch.setattr(runner, "send_email", flaky)
+
+    my_job = job("1", "Finans Uzmanı")
+    my_job.search_name = "Benim"
+    their_job = job("2", "Denetim Uzmanı")
+    their_job.search_name = "Arkadaşım"
+
+    errors = runner.notify(config, [my_job, their_job])
+    assert delivered == ["friend@example.com"]
+    assert len(errors) == 1

@@ -112,6 +112,9 @@ def notify(config: Config, jobs: list[Job]) -> list[str]:
                 send_email(config.email, [address], address_jobs)
             except EmailError as exc:
                 errors.append(str(exc))
+            except Exception as exc:  # malformed posting, encoding problem, ...
+                # One unusable posting must not cost everyone else their mail.
+                errors.append(f"{address} için gönderim başarısız: {exc!r}")
 
     if config.ntfy.enabled:
         try:

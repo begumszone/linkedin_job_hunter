@@ -63,8 +63,21 @@ def _clean_url(href: str) -> str:
     return urlunsplit((parts.scheme, parts.netloc, parts.path, "", ""))
 
 
+_WHITESPACE = re.compile(r"\s+")
+
+
+def _clean(value: str) -> str:
+    """Collapse all whitespace, newlines included, into single spaces.
+
+    LinkedIn sometimes publishes titles split across lines ("... Senior
+    Associate\\nIstanbul\\nFull-Time"). A newline in a title ends up in the
+    e-mail subject header, which is not allowed and aborts the whole run.
+    """
+    return _WHITESPACE.sub(" ", (value or "").replace("\xa0", " ")).strip()
+
+
 def _text(node) -> str:
-    return node.get_text(strip=True) if node else ""
+    return _clean(node.get_text(" ", strip=True)) if node else ""
 
 
 def _job_id(card, url: str) -> str:
@@ -92,7 +105,9 @@ def parse_jobs(html: str) -> list[Job]:
 
         title = _text(card.select_one("h3.base-search-card__title"))
         if not title and link:
-            title = _text(link.select_one("span.sr-only")) or link.get("aria-label", "")
+            title = _text(link.select_one("span.sr-only")) or _clean(
+                link.get("aria-label", "")
+            )
 
         time_node = card.select_one("time")
         jobs.append(

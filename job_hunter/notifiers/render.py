@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import html
+import re
 from collections import defaultdict
 from typing import Iterable
 
@@ -16,13 +17,21 @@ def group_by_search(jobs: Iterable[Job]) -> dict[str, list[Job]]:
     return dict(grouped)
 
 
+_WHITESPACE = re.compile(r"\s+")
+
+
+def one_line(value: str) -> str:
+    """Flatten a value so it is safe to put in a mail header."""
+    return _WHITESPACE.sub(" ", value or "").strip()
+
+
 def subject(jobs: list[Job], prefix: str = "[İlan]") -> str:
     count = len(jobs)
     if count == 1:
         job = jobs[0]
         title = job.title or "Yeni ilan"
         company = f" – {job.company}" if job.company else ""
-        return f"{prefix} {title}{company}"
+        return one_line(f"{prefix} {title}{company}")
     return f"{prefix} {count} yeni ilan"
 
 
