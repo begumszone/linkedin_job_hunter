@@ -452,6 +452,10 @@
       "first_seen": "2026-09-15T09:34:12+00:00",
       "title": "Finance and Administration Officer"
     },
+    "4458750657": {
+      "first_seen": "2026-09-21T08:48:55+00:00",
+      "title": "Marka Müdürü"
+    },
     "4458854105": {
       "first_seen": "2026-09-13T13:52:52+00:00",
       "title": "Satış Pazarlama Sorumlusu"
@@ -3185,5 +3189,5 @@
       "title": "Finansal Analist"
     }
   },
-  "updated_at": "2026-09-21T08:34:14+00:00"
+  "updated_at": "2026-09-21T08:48:55+00:00"
 }
