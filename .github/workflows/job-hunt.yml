@@ -11,6 +11,20 @@ on:
         description: "Bildirim gönderme, sadece bulunanları logla"
         type: boolean
         default: false
+      # Aşağıdakiler tek seferlik toparlama taraması içindir; normal turlarda
+      # boş bırakılır ve config'teki değerler geçerli olur.
+      only_search:
+        description: "Yalnızca adı bunu içeren aramayı çalıştır (ör. Samet)"
+        type: string
+        default: ""
+      hours:
+        description: "Kaç saat geriye bakılsın (boş = config'teki değer)"
+        type: string
+        default: ""
+      max_results:
+        description: "Kelime başına en fazla ilan (boş = config'teki değer)"
+        type: string
+        default: ""
 
 concurrency:
   # Kilit adı: 13 Eylül 2026'daki GitHub kesintisinde bir çalışma "queued"
@@ -29,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     # Asılı kalan bir tarama kilidi süresiz tutmasın: normalde ~3,5 dakika
     # sürüyor, 15 dakikada kesilmesi güvenli bir üst sınır.
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -58,7 +72,10 @@ jobs:
         run: |
           python -m job_hunter \
             --config config.yaml \
-            ${{ inputs.dry_run && '--dry-run' || '' }}
+            ${{ inputs.dry_run && '--dry-run' || '' }} \
+            ${{ inputs.only_search && format('--only-search "{0}"', inputs.only_search) || '' }} \
+            ${{ inputs.hours && format('--hours {0}', inputs.hours) || '' }} \
+            ${{ inputs.max_results && format('--max-results {0}', inputs.max_results) || '' }}
 
       - name: Görülen ilanların kaydını sakla
         if: always()
