@@ -132,9 +132,7 @@ searches:
       - United States
     recipients_secret: SAMET_EMAIL
     max_results: 25
-    # SAMET_EMAIL secret'ı tanımlanınca true yapılacak. Secret olmadan true
-    # olursa tarama hata verir ve kimseye e-posta gitmez.
-    enabled: false
+    enabled: true
 
   # Bir arkadaşın için ikinci arama örneği — kullanmıyorsan bu bloğu sil.
   #
