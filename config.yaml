@@ -17,7 +17,7 @@ searches:
       - UFRS
       - LOGO
       - controlling
-      - excel
+      - power bi       # "Power BI Developer", "Data Analyst (Power BI & SQL)"
       - treasury
     # Konum: LinkedIn'in tanıdığı herhangi bir yazım. Boş bırakırsan her yer.
     location: "İstanbul, Türkiye"
@@ -28,9 +28,6 @@ searches:
     exclude:
       - stajyer
       - intern
-      # 'excel' anahtar kelimesi "Operational Excellence" başlıklarına da
-      # uyduğu için o ilanlar eleniyor.
-      - excellence
     # Sadece uzaktan çalışma ilanları için true yap.
     remote_only: false
     # Bu aramanın sonuçları ayrıca şu adreslere de gitsin (arkadaşların için).
