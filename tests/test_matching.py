@@ -43,3 +43,27 @@ def test_keyword_matches_a_longer_word_it_starts():
 def test_partial_word_does_not_leak_across_tokens():
     # "IFRS" must not match inside an unrelated word run.
     assert matches("Difrsavunma Uzmanı", ["IFRS"], mode="any") == []
+
+
+def test_short_keywords_must_match_a_whole_word():
+    # "IT" with a suffix allowed would match İthalat, İtfaiye and İtibar.
+    assert matches("IT Yöneticisi", ["IT"]) == ["IT"]
+    assert matches("Kıdemli IT Uzmanı", ["IT"]) == ["IT"]
+    assert matches("İthalat Uzmanı", ["IT"]) == []
+    assert matches("İtfaiye Eri", ["IT"]) == []
+
+
+def test_short_keyword_matches_inside_punctuation():
+    assert matches("Bilgi İşlem (IT)", ["IT"]) == ["IT"]
+
+
+def test_longer_keywords_still_allow_a_suffix():
+    assert matches("Finansal Raporlama", ["finans"]) == ["finans"]
+    assert matches("Sistemleri Uzmanı", ["sistem"]) == ["sistem"]
+
+
+def test_multi_word_keyword_matches_the_whole_phrase_only():
+    keyword = ["Bilgi Sistemleri Yöneticisi"]
+    assert matches("Kıdemli Bilgi Sistemleri Yöneticisi", keyword) == keyword
+    assert matches("Bilgi Sistemleri Uzmanı", keyword) == []
+    assert matches("Bilgi Teknolojileri Yöneticisi", keyword) == []

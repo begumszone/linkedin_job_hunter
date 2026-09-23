@@ -113,10 +113,14 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
     # A search can name a secret holding its recipients, so a public repo
     # never has to carry anyone's address.
     recipients = _as_list(raw.get("recipients"))
+    enabled = bool(raw.get("enabled", True))
+
     secret_name = str(raw.get("recipients_secret") or "").strip()
     if secret_name:
         from_secret = _env_list(secret_name)
-        if not from_secret and not recipients:
+        # A disabled search never sends anything, so its secret need not exist
+        # yet — that is how a search is staged before its secret is created.
+        if enabled and not from_secret and not recipients:
             # Falling back to the global list here would quietly send this
             # search's alerts to the wrong person.
             raise ConfigError(
@@ -141,7 +145,7 @@ def _load_search(raw: dict[str, Any], index: int) -> Search:
         remote_only=bool(raw.get("remote_only", False)),
         recipients=recipients,
         max_results=int(raw.get("max_results", 25)),
-        enabled=bool(raw.get("enabled", True)),
+        enabled=enabled,
         exclude_locations=[
             term.strip() for term in _as_list(raw.get("exclude_locations")) if term.strip()
         ],

@@ -98,6 +98,44 @@ searches:
     # İş bulunca aramayı silme, burayı false yap.
     enabled: true
 
+  - name: "Samet – Sistem Yöneticisi"
+    keywords:
+      - sistem           # Sistem Mühendisi/Yöneticisi/Sorumlusu, Bilgi Sistemleri
+      - system           # System Administrator, Systems Engineer
+      - BT               # BT Yöneticisi, BT Sorumlusu
+      - IT               # IT Yöneticisi, Kıdemli IT Uzmanı, IT Manager
+      - server           # Windows Server, Server Uzmanı
+      - linux
+      - active directory
+      - vmware
+      - sanallaştırma
+      - firewall
+    location: "İstanbul, Türkiye"
+    match_mode: any
+    exclude:
+      - stajyer
+      - intern
+    exclude_locations:
+      - Romanya
+      - Romania
+      - Çin
+      - China
+      - Hindistan
+      - India
+      - Polonya
+      - Poland
+      - Almanya
+      - Germany
+      - Birleşik Krallık
+      - United Kingdom
+      - Amerika
+      - United States
+    recipients_secret: SAMET_EMAIL
+    max_results: 25
+    # SAMET_EMAIL secret'ı tanımlanınca true yapılacak. Secret olmadan true
+    # olursa tarama hata verir ve kimseye e-posta gitmez.
+    enabled: false
+
   # Bir arkadaşın için ikinci arama örneği — kullanmıyorsan bu bloğu sil.
   #
   # Adresini buraya YAZMA: repo herkese açık. Bunun yerine adresi bir secret

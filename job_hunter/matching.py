@@ -11,15 +11,25 @@ def _haystack(*parts: str) -> str:
     return tokenize(" ".join(part for part in parts if part))
 
 
+# Short keywords are acronyms in practice (IT, BT, AD). Matching them with a
+# suffix allowed turns "IT" into a match for "İthalat" and "İtfaiye", so they
+# have to line up with a whole word.
+ACRONYM_LENGTH = 3
+
+
 def _contains(haystack: str, term: str) -> bool:
     """True when ``term`` starts a word in ``haystack``.
 
-    The match must begin at a word boundary but may run into a suffix, so
-    ``finans`` finds "Finansal Raporlama" while ``IFRS`` does not fire on an
-    unrelated word that merely contains those letters.
+    A longer keyword may run into a suffix, so ``finans`` finds "Finansal
+    Raporlama". A keyword of at most ``ACRONYM_LENGTH`` characters must match a
+    whole word instead.
     """
     needle = tokenize(term).strip()
-    return bool(needle) and f" {needle}" in haystack
+    if not needle:
+        return False
+    if len(needle.replace(" ", "")) <= ACRONYM_LENGTH:
+        return f" {needle} " in haystack
+    return f" {needle}" in haystack
 
 
 def matched_keywords(text: str, keywords: Sequence[str]) -> list[str]:

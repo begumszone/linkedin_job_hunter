@@ -53,6 +53,7 @@ jobs:
           # secret'ı buraya da yazmalısın; GitHub secret'ları kendiliğinden
           # uygulamaya geçirmiyor.
           MARKETING_EMAILS: ${{ secrets.MARKETING_EMAILS }}
+          SAMET_EMAIL: ${{ secrets.SAMET_EMAIL }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
           python -m job_hunter \

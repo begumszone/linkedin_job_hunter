@@ -160,3 +160,22 @@ def test_missing_recipients_secret_is_an_error_not_a_fallback(tmp_path, monkeypa
     # Without this guard the friend's alerts would land in the global inbox.
     with pytest.raises(ConfigError, match="FRIEND_EMAIL"):
         load_config(write(tmp_path, text))
+
+
+def test_disabled_search_does_not_require_its_secret(tmp_path, monkeypatch):
+    # A search is staged with enabled: false until its secret is created.
+    monkeypatch.setenv("MY_EMAIL", "me@example.com")
+    monkeypatch.delenv("FRIEND_EMAIL", raising=False)
+    text = SHARED.replace(
+        '  - name: "Arkadaşım"\n    keywords: [denetim]',
+        '  - name: "Arkadaşım"\n    enabled: false\n    keywords: [denetim]',
+    )
+    config = load_config(write(tmp_path, text))
+    assert [s.name for s in config.active_searches()] == ["Benim"]
+
+
+def test_enabled_search_still_requires_its_secret(tmp_path, monkeypatch):
+    monkeypatch.setenv("MY_EMAIL", "me@example.com")
+    monkeypatch.delenv("FRIEND_EMAIL", raising=False)
+    with pytest.raises(ConfigError, match="FRIEND_EMAIL"):
+        load_config(write(tmp_path, SHARED))
