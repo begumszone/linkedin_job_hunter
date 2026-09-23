@@ -3640,6 +3640,10 @@
       "first_seen": "2026-09-23T14:10:54+00:00",
       "title": "Service Desk IT Technician"
     },
+    "4469309155": {
+      "first_seen": "2026-09-23T19:35:32+00:00",
+      "title": "IT Supervisor"
+    },
     "4469311893": {
       "first_seen": "2026-09-23T13:48:49+00:00",
       "title": "Finansal Danışman"
@@ -3667,6 +3671,10 @@
     "4469320434": {
       "first_seen": "2026-09-23T15:20:32+00:00",
       "title": "Yazılım/Sistem Test Mühendisi"
+    },
+    "4469353188": {
+      "first_seen": "2026-09-23T19:35:32+00:00",
+      "title": "Performance Marketing Uzmanı / Yöneticisi"
     },
     "4469409840": {
       "first_seen": "2026-09-23T06:04:09+00:00",
@@ -3825,5 +3833,5 @@
       "title": "Accounting & Reporting Specialist"
     }
   },
-  "updated_at": "2026-09-23T17:06:22+00:00"
+  "updated_at": "2026-09-23T19:35:33+00:00"
 }
