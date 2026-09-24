@@ -512,6 +512,10 @@
       "first_seen": "2026-09-09T09:34:02+00:00",
       "title": "Finansal Muhasebeci"
     },
+    "4458079567": {
+      "first_seen": "2026-09-24T14:35:51+00:00",
+      "title": "Sistem ve Altyapı Müdürü"
+    },
     "4458089447": {
       "first_seen": "2026-09-07T11:29:38+00:00",
       "title": "Tahsilat Stratejisi ve Raporlama Yönetmeni"
@@ -3872,6 +3876,10 @@
       "first_seen": "2026-09-24T11:05:49+00:00",
       "title": "IT Continuity and Process Management Specialist"
     },
+    "4469714276": {
+      "first_seen": "2026-09-24T14:35:51+00:00",
+      "title": "Marketing Artist"
+    },
     "4469714428": {
       "first_seen": "2026-09-24T09:35:45+00:00",
       "title": "Dijital Pazarlama Analiz Uzmanı"
@@ -3931,6 +3939,14 @@
     "4469751194": {
       "first_seen": "2026-09-24T13:35:50+00:00",
       "title": "Çalışan Deneyimi Tasarımı ve DM İletişim Bölüm Sorumlusu"
+    },
+    "4469752534": {
+      "first_seen": "2026-09-24T14:35:51+00:00",
+      "title": "Finansal analiz uzmanı"
+    },
+    "4469758280": {
+      "first_seen": "2026-09-24T14:35:51+00:00",
+      "title": "Data Center IT Manager-Istanbul"
     },
     "4469820115": {
       "first_seen": "2026-09-20T17:19:20+00:00",
@@ -4113,5 +4129,5 @@
       "title": "Pazarlama Müdürü"
     }
   },
-  "updated_at": "2026-09-24T14:20:37+00:00"
+  "updated_at": "2026-09-24T14:35:51+00:00"
 }
