@@ -380,6 +380,10 @@
       "first_seen": "2026-09-14T08:04:21+00:00",
       "title": "Software Engineer, Performance Marketing"
     },
+    "4453616772": {
+      "first_seen": "2026-09-24T10:38:00+00:00",
+      "title": "Specialist I, Marketing"
+    },
     "4453696549": {
       "first_seen": "2026-09-09T09:48:57+00:00",
       "title": "Budget, Reporting & Control Associate Manager"
@@ -3832,6 +3836,26 @@
       "first_seen": "2026-09-24T10:22:05+00:00",
       "title": "IT Systems Manager"
     },
+    "4469722625": {
+      "first_seen": "2026-09-24T10:38:00+00:00",
+      "title": "Finansal Raporlama ve Geliştirme Kıdemli Uzmanı"
+    },
+    "4469725400": {
+      "first_seen": "2026-09-24T10:38:00+00:00",
+      "title": "Ticari Pazarlama Yöneticisi"
+    },
+    "4469734058": {
+      "first_seen": "2026-09-24T10:38:00+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
+    "4469734115": {
+      "first_seen": "2026-09-24T10:38:00+00:00",
+      "title": "IFRS and Consolidation Supervisor"
+    },
+    "4469736030": {
+      "first_seen": "2026-09-24T10:38:00+00:00",
+      "title": "Senior Systems Engineer (Virtualization)"
+    },
     "4469820115": {
       "first_seen": "2026-09-20T17:19:20+00:00",
       "title": "Ticari ve Pazarlama Operasyonları Sorumlusu"
@@ -3987,7 +4011,11 @@
     "4471440298": {
       "first_seen": "2026-09-24T10:22:05+00:00",
       "title": "Senior Paid Digital Marketing Specialist"
+    },
+    "4471443153": {
+      "first_seen": "2026-09-24T10:38:00+00:00",
+      "title": "Head of Marketing"
     }
   },
-  "updated_at": "2026-09-24T10:22:06+00:00"
+  "updated_at": "2026-09-24T10:38:01+00:00"
 }
