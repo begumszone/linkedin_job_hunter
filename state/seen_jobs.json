@@ -4496,9 +4496,17 @@
       "first_seen": "2026-09-27T12:06:00+00:00",
       "title": "kurumsal iletişim müdürü"
     },
+    "4470808944": {
+      "first_seen": "2026-09-27T22:06:08+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4470809572": {
       "first_seen": "2026-09-27T18:06:15+00:00",
       "title": "Fire Alarm Systems Sales Responsible"
+    },
+    "4470813844": {
+      "first_seen": "2026-09-27T22:06:08+00:00",
+      "title": "RF Sistem Mühendisi"
     },
     "4470817362": {
       "first_seen": "2026-09-27T18:06:15+00:00",
@@ -4689,5 +4697,5 @@
       "title": "Ubuntu/Linux User for AI Data Training"
     }
   },
-  "updated_at": "2026-09-27T20:05:56+00:00"
+  "updated_at": "2026-09-27T22:06:08+00:00"
 }
