@@ -408,6 +408,10 @@
       "first_seen": "2026-09-10T10:48:55+00:00",
       "title": "Finans Uzmanı"
     },
+    "4448015193": {
+      "first_seen": "2026-09-28T08:50:36+00:00",
+      "title": "Satış ve Pazarlama Temsilcisi"
+    },
     "4448430529": {
       "first_seen": "2026-09-25T15:51:47+00:00",
       "title": "BT Servis ve Operasyon Müdür Yardımcısı"
@@ -4600,6 +4604,10 @@
       "first_seen": "2026-09-28T08:20:42+00:00",
       "title": "Muhasebe ve Finans Müdür Yardımcısı"
     },
+    "4470836915": {
+      "first_seen": "2026-09-28T08:50:36+00:00",
+      "title": "Dijital Pazarlama Uzmanı"
+    },
     "4470838416": {
       "first_seen": "2026-09-28T06:20:47+00:00",
       "title": "Finance Manager"
@@ -4615,6 +4623,10 @@
     "4470842339": {
       "first_seen": "2026-09-28T07:50:30+00:00",
       "title": "Performans Pazarlama Uzmanı"
+    },
+    "4470842901": {
+      "first_seen": "2026-09-28T08:50:36+00:00",
+      "title": "Ticari Pazarlama Uzmanı (Süt)- Merkez Ofis"
     },
     "4470843403": {
       "first_seen": "2026-09-28T06:50:44+00:00",
@@ -4837,5 +4849,5 @@
       "title": "Satellite Systems Engineer"
     }
   },
-  "updated_at": "2026-09-28T08:35:49+00:00"
+  "updated_at": "2026-09-28T08:50:36+00:00"
 }
