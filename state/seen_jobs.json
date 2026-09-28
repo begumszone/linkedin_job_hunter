@@ -4556,6 +4556,10 @@
       "first_seen": "2026-09-27T19:05:55+00:00",
       "title": "CRM Uzmanı"
     },
+    "4470825936": {
+      "first_seen": "2026-09-28T07:50:30+00:00",
+      "title": "Raporlama ve Arşiv Sorumlusu"
+    },
     "4470827660": {
       "first_seen": "2026-09-28T05:50:37+00:00",
       "title": "Sistem Güvenliği Uzmanı"
@@ -4567,6 +4571,10 @@
     "4470832695": {
       "first_seen": "2026-09-28T06:36:34+00:00",
       "title": "Software Engineer, Performance Marketing"
+    },
+    "4470835731": {
+      "first_seen": "2026-09-28T07:50:30+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
     },
     "4470836560": {
       "first_seen": "2026-09-28T07:20:53+00:00",
@@ -4580,9 +4588,17 @@
       "first_seen": "2026-09-28T07:20:53+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
     },
+    "4470842339": {
+      "first_seen": "2026-09-28T07:50:30+00:00",
+      "title": "Performans Pazarlama Uzmanı"
+    },
     "4470843403": {
       "first_seen": "2026-09-28T06:50:44+00:00",
       "title": "Treasury Assistant Manager"
+    },
+    "4470843586": {
+      "first_seen": "2026-09-28T07:50:30+00:00",
+      "title": "Marka İletişim ve Görsel Uygulama Uzmanı"
     },
     "4470846080": {
       "first_seen": "2026-09-28T06:50:44+00:00",
@@ -4777,5 +4793,5 @@
       "title": "Satellite Systems Engineer"
     }
   },
-  "updated_at": "2026-09-28T07:20:53+00:00"
+  "updated_at": "2026-09-28T07:50:30+00:00"
 }
