@@ -3272,6 +3272,10 @@
       "first_seen": "2026-09-21T12:20:52+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
     },
+    "4467383784": {
+      "first_seen": "2026-09-28T08:05:50+00:00",
+      "title": "Ağ Sistemleri Uzmanı"
+    },
     "4467384839": {
       "first_seen": "2026-09-21T13:49:05+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
@@ -3291,6 +3295,10 @@
     "4467385898": {
       "first_seen": "2026-09-21T13:49:05+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
+    },
+    "4467386742": {
+      "first_seen": "2026-09-28T08:05:50+00:00",
+      "title": "Kıdemli Ağ Sistemleri Uzmanı"
     },
     "4467388578": {
       "first_seen": "2026-09-21T13:49:05+00:00",
@@ -4572,6 +4580,10 @@
       "first_seen": "2026-09-28T06:36:34+00:00",
       "title": "Software Engineer, Performance Marketing"
     },
+    "4470835690": {
+      "first_seen": "2026-09-28T08:05:50+00:00",
+      "title": "Muhasebe & Finans Uzmanı"
+    },
     "4470835731": {
       "first_seen": "2026-09-28T07:50:30+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
@@ -4659,6 +4671,10 @@
     "4471322629": {
       "first_seen": "2026-09-28T06:36:34+00:00",
       "title": "IT Digital-Intelligent Product Engineer"
+    },
+    "4471339379": {
+      "first_seen": "2026-09-28T08:05:50+00:00",
+      "title": "Infrastructure Observability Systems Engineer"
     },
     "4471416655": {
       "first_seen": "2026-09-24T08:35:48+00:00",
@@ -4793,5 +4809,5 @@
       "title": "Satellite Systems Engineer"
     }
   },
-  "updated_at": "2026-09-28T07:50:30+00:00"
+  "updated_at": "2026-09-28T08:05:51+00:00"
 }
