@@ -4640,9 +4640,25 @@
       "first_seen": "2026-09-28T06:50:44+00:00",
       "title": "CRM Specialist / Victoria's Secret"
     },
+    "4470848424": {
+      "first_seen": "2026-09-28T09:35:46+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4470850165": {
       "first_seen": "2026-09-28T08:20:42+00:00",
       "title": "Dijital Pazarlama Uzmanı"
+    },
+    "4470853337": {
+      "first_seen": "2026-09-28T09:35:46+00:00",
+      "title": "Dijital Pazarlama ve Crm Yöneticisi"
+    },
+    "4470854323": {
+      "first_seen": "2026-09-28T09:35:46+00:00",
+      "title": "Junior Dijital Pazarlama"
+    },
+    "4470854367": {
+      "first_seen": "2026-09-28T09:35:46+00:00",
+      "title": "German-Speaking Marketing Assistant (Freelance / Hybrid)"
     },
     "4470857168": {
       "first_seen": "2026-09-28T08:35:49+00:00",
@@ -4651,6 +4667,10 @@
     "4470857177": {
       "first_seen": "2026-09-28T09:20:42+00:00",
       "title": "Finans ve Operasyon Uzmanı"
+    },
+    "4470859085": {
+      "first_seen": "2026-09-28T09:35:46+00:00",
+      "title": "Head of Marketing"
     },
     "4470860049": {
       "first_seen": "2026-09-28T09:05:53+00:00",
@@ -4861,5 +4881,5 @@
       "title": "IT Support Professional"
     }
   },
-  "updated_at": "2026-09-28T09:20:43+00:00"
+  "updated_at": "2026-09-28T09:35:46+00:00"
 }
