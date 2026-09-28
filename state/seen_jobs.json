@@ -1,5 +1,9 @@
 {
   "jobs": {
+    "3943455241": {
+      "first_seen": "2026-09-28T13:20:41+00:00",
+      "title": "Assistant Brand Manager Marketing"
+    },
     "3959375972": {
       "first_seen": "2026-09-09T11:18:57+00:00",
       "title": "Satış Pazarlama Sorumlusu"
@@ -4740,6 +4744,10 @@
       "first_seen": "2026-09-28T11:35:55+00:00",
       "title": "Budget and Reporting Specialist"
     },
+    "4470872273": {
+      "first_seen": "2026-09-28T13:20:41+00:00",
+      "title": "Telecomm. Systems SW Engineer"
+    },
     "4470881000": {
       "first_seen": "2026-09-28T12:50:34+00:00",
       "title": "Game Marketing Designer"
@@ -4811,6 +4819,10 @@
     "4471343155": {
       "first_seen": "2026-09-28T08:20:42+00:00",
       "title": "Finans Uzmanı"
+    },
+    "4471380619": {
+      "first_seen": "2026-09-28T13:20:41+00:00",
+      "title": "E-Commerce Performance Marketing Executive"
     },
     "4471416655": {
       "first_seen": "2026-09-24T08:35:48+00:00",
@@ -4953,5 +4965,5 @@
       "title": "Sistem Mühendisi"
     }
   },
-  "updated_at": "2026-09-28T12:50:34+00:00"
+  "updated_at": "2026-09-28T13:20:42+00:00"
 }
