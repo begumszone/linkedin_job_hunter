@@ -4748,6 +4748,10 @@
       "first_seen": "2026-09-28T11:35:55+00:00",
       "title": "Deputy Manager Finance"
     },
+    "4470867815": {
+      "first_seen": "2026-09-28T14:50:36+00:00",
+      "title": "Finance Specialist"
+    },
     "4470868377": {
       "first_seen": "2026-09-28T11:50:31+00:00",
       "title": "Pazarlama Müdürü"
@@ -4768,9 +4772,21 @@
       "first_seen": "2026-09-28T13:20:41+00:00",
       "title": "Telecomm. Systems SW Engineer"
     },
+    "4470874514": {
+      "first_seen": "2026-09-28T14:50:36+00:00",
+      "title": "Finance Manager"
+    },
+    "4470875358": {
+      "first_seen": "2026-09-28T14:50:36+00:00",
+      "title": "Finansal Güvence Danışmanı"
+    },
     "4470878397": {
       "first_seen": "2026-09-28T14:20:47+00:00",
       "title": "Muhasebe ve Finans Müdür Yardımcısı/Genel Müdürlük"
+    },
+    "4470878481": {
+      "first_seen": "2026-09-28T14:50:36+00:00",
+      "title": "Finans Uzmanı / Uzman Yardımcısı"
     },
     "4470879334": {
       "first_seen": "2026-09-28T14:35:51+00:00",
@@ -4779,6 +4795,10 @@
     "4470881000": {
       "first_seen": "2026-09-28T12:50:34+00:00",
       "title": "Game Marketing Designer"
+    },
+    "4470888161": {
+      "first_seen": "2026-09-28T14:50:36+00:00",
+      "title": "Finansal Kontrol Uzmanı"
     },
     "4470902575": {
       "first_seen": "2026-09-23T15:20:32+00:00",
@@ -5021,5 +5041,5 @@
       "title": "Dijital İletişim ve Topluluk Yöneticisi"
     }
   },
-  "updated_at": "2026-09-28T14:35:52+00:00"
+  "updated_at": "2026-09-28T14:50:36+00:00"
 }
