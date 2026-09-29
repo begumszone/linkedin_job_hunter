@@ -2756,6 +2756,10 @@
       "first_seen": "2026-09-16T20:19:05+00:00",
       "title": "Finance & Accounting Manager"
     },
+    "4466252658": {
+      "first_seen": "2026-09-29T13:50:35+00:00",
+      "title": "Sistem ve Ağ Destek Uzmanı"
+    },
     "4466252794": {
       "first_seen": "2026-09-17T11:34:10+00:00",
       "title": "CRM Uzmanı"
@@ -5148,6 +5152,10 @@
       "first_seen": "2026-09-29T11:35:47+00:00",
       "title": "Finance & Tax Specialist"
     },
+    "4471706397": {
+      "first_seen": "2026-09-29T13:50:35+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4471709393": {
       "first_seen": "2026-09-29T10:05:54+00:00",
       "title": "Junior System Administrator (Monitoring Team)"
@@ -5192,9 +5200,21 @@
       "first_seen": "2026-09-29T12:20:32+00:00",
       "title": "Marketing Communications Specialist"
     },
+    "4471727569": {
+      "first_seen": "2026-09-29T13:50:35+00:00",
+      "title": "Budget&Reporting Supervisor"
+    },
     "4471737052": {
       "first_seen": "2026-09-29T12:50:41+00:00",
       "title": "Dijital Pazarlama - Influencer Uzmanı"
+    },
+    "4471738314": {
+      "first_seen": "2026-09-29T13:50:35+00:00",
+      "title": "Active Directory and Unified Messaging Services Senior Systems Engineer(Ankara)"
+    },
+    "4471744012": {
+      "first_seen": "2026-09-29T13:50:35+00:00",
+      "title": "Pazarlama Sorumlusu - (Catering)"
     },
     "4471854791": {
       "first_seen": "2026-09-25T08:05:50+00:00",
@@ -5325,5 +5345,5 @@
       "title": "Pazarlama Yöneticisi"
     }
   },
-  "updated_at": "2026-09-29T13:05:55+00:00"
+  "updated_at": "2026-09-29T13:50:36+00:00"
 }
