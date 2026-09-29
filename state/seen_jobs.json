@@ -4964,6 +4964,10 @@
       "first_seen": "2026-09-29T08:35:49+00:00",
       "title": "Sistem Uzmanı(Mid-Level)"
     },
+    "4471294052": {
+      "first_seen": "2026-09-29T10:05:54+00:00",
+      "title": "Pazarlama ve Kurumsal İletişim Uzmanı"
+    },
     "4471294282": {
       "first_seen": "2026-09-29T09:20:39+00:00",
       "title": "Finans Uzmanı"
@@ -5104,6 +5108,14 @@
       "first_seen": "2026-09-29T09:50:54+00:00",
       "title": "Pazarlama Sorumlusu - Catering"
     },
+    "4471704564": {
+      "first_seen": "2026-09-29T10:05:54+00:00",
+      "title": "Finans Uzmanı"
+    },
+    "4471709393": {
+      "first_seen": "2026-09-29T10:05:54+00:00",
+      "title": "Junior System Administrator (Monitoring Team)"
+    },
     "4471854791": {
       "first_seen": "2026-09-25T08:05:50+00:00",
       "title": "Pazarlama Uzmanı / Kıdemli Uzmanı"
@@ -5213,5 +5225,5 @@
       "title": "Head of Finance"
     }
   },
-  "updated_at": "2026-09-29T09:50:54+00:00"
+  "updated_at": "2026-09-29T10:05:54+00:00"
 }
