@@ -236,6 +236,14 @@
       "first_seen": "2026-09-10T09:34:04+00:00",
       "title": "Finans Yönetmeni"
     },
+    "4431317825": {
+      "first_seen": "2026-09-29T08:21:00+00:00",
+      "title": "Senior System Engineer"
+    },
+    "4431327726": {
+      "first_seen": "2026-09-29T08:21:00+00:00",
+      "title": "IT MANAGER"
+    },
     "4431489007": {
       "first_seen": "2026-09-17T10:18:59+00:00",
       "title": "Performance Marketing Specialist, Turkiye (12-month Contract)"
@@ -4908,6 +4916,10 @@
       "first_seen": "2026-09-29T06:06:49+00:00",
       "title": "Çevresel Sistemler Yönetimi Uzmanı"
     },
+    "4471268915": {
+      "first_seen": "2026-09-29T08:21:00+00:00",
+      "title": "Konsolosluk İletişim Merkezi Danışmanı"
+    },
     "4471273261": {
       "first_seen": "2026-09-29T07:07:12+00:00",
       "title": "System Engineer [K-2026-OPS-04]"
@@ -4923,6 +4935,10 @@
     "4471277390": {
       "first_seen": "2026-09-29T07:51:20+00:00",
       "title": "Stratejik Pazarlama Sorumlusu"
+    },
+    "4471279711": {
+      "first_seen": "2026-09-29T08:21:00+00:00",
+      "title": "Senior Database Specialist | SQL Server, PostgreSQL, NoSQL"
     },
     "4471282040": {
       "first_seen": "2026-09-29T07:07:12+00:00",
@@ -5128,6 +5144,10 @@
       "first_seen": "2026-09-29T07:51:20+00:00",
       "title": "Senior Performance Marketing Specialist"
     },
+    "4472729006": {
+      "first_seen": "2026-09-29T08:21:00+00:00",
+      "title": "Öz Markalar Müdürü"
+    },
     "4472738588": {
       "first_seen": "2026-09-28T14:20:47+00:00",
       "title": "Senior Active Directory Engineer"
@@ -5153,5 +5173,5 @@
       "title": "Sistem Yöneticisi"
     }
   },
-  "updated_at": "2026-09-29T07:51:21+00:00"
+  "updated_at": "2026-09-29T08:21:01+00:00"
 }
