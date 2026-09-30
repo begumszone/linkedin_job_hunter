@@ -1,5 +1,9 @@
 {
   "jobs": {
+    "3452260199": {
+      "first_seen": "2026-09-30T15:05:53+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "3943455241": {
       "first_seen": "2026-09-28T13:20:41+00:00",
       "title": "Assistant Brand Manager Marketing"
@@ -5657,5 +5661,5 @@
       "title": "Finansal Kontrolör"
     }
   },
-  "updated_at": "2026-09-30T14:35:42+00:00"
+  "updated_at": "2026-09-30T15:05:53+00:00"
 }
