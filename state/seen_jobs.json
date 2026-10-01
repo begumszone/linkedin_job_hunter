@@ -5688,6 +5688,10 @@
       "first_seen": "2026-10-01T10:37:10+00:00",
       "title": "Finance Manager (Spirits)"
     },
+    "4472909950": {
+      "first_seen": "2026-10-01T11:36:03+00:00",
+      "title": "Pazarlama Yöneticisi"
+    },
     "4472910756": {
       "first_seen": "2026-10-01T11:06:05+00:00",
       "title": "Finans Uzmanı"
@@ -5707,6 +5711,10 @@
     "4472920208": {
       "first_seen": "2026-10-01T10:37:10+00:00",
       "title": "Influencer Marketing Manager"
+    },
+    "4472924318": {
+      "first_seen": "2026-10-01T11:36:03+00:00",
+      "title": "Dijital Pazarlama Uzmanı"
     },
     "4473098463": {
       "first_seen": "2026-09-29T07:22:04+00:00",
@@ -5825,5 +5833,5 @@
       "title": "İHA Sistemleri ve Aviyonik Yazılım Uzmanı"
     }
   },
-  "updated_at": "2026-10-01T11:20:52+00:00"
+  "updated_at": "2026-10-01T11:36:03+00:00"
 }
