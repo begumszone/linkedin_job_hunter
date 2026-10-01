@@ -5584,6 +5584,10 @@
       "first_seen": "2026-10-01T06:06:59+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
     },
+    "4472685866": {
+      "first_seen": "2026-10-01T07:35:44+00:00",
+      "title": "Finans"
+    },
     "4472689432": {
       "first_seen": "2026-10-01T05:51:00+00:00",
       "title": "BT Yazılım Mühendisi (Lojistik)"
@@ -5591,6 +5595,10 @@
     "4472689516": {
       "first_seen": "2026-10-01T06:35:39+00:00",
       "title": "Treasury Executive"
+    },
+    "4472693476": {
+      "first_seen": "2026-10-01T07:35:44+00:00",
+      "title": "Muhasebe ve Finans Yöneticisi"
     },
     "4472695316": {
       "first_seen": "2026-10-01T07:20:31+00:00",
@@ -5741,5 +5749,5 @@
       "title": "Associate Marketing Artist"
     }
   },
-  "updated_at": "2026-10-01T07:20:32+00:00"
+  "updated_at": "2026-10-01T07:35:44+00:00"
 }
