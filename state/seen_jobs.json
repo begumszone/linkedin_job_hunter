@@ -488,6 +488,10 @@
       "first_seen": "2026-09-16T12:48:52+00:00",
       "title": "Associate Manager Finance"
     },
+    "4448995250": {
+      "first_seen": "2026-10-02T09:05:55+00:00",
+      "title": "İletişim Merkezi Uzman Yardımcısı"
+    },
     "4448995527": {
       "first_seen": "2026-09-17T17:04:15+00:00",
       "title": "Finance & Accounting Specialist"
@@ -5896,13 +5900,29 @@
       "first_seen": "2026-10-02T07:35:33+00:00",
       "title": "EMBEDDED SYSTEMS SOFTWARE ENGINEER (UAS)"
     },
+    "4473114706": {
+      "first_seen": "2026-10-02T09:05:55+00:00",
+      "title": "Finansal Raporlama ve Konsolidasyon Yöneticisi"
+    },
     "4473119094": {
       "first_seen": "2026-10-02T07:50:30+00:00",
       "title": "Dijital Pazarlama Uzmanı"
     },
+    "4473119695": {
+      "first_seen": "2026-10-02T09:05:55+00:00",
+      "title": "Sistem Birim Tasarım Mühendisi"
+    },
     "4473120173": {
       "first_seen": "2026-10-02T07:50:30+00:00",
       "title": "Bütçe, Mali Analiz ve Raporlama Uzmanı"
+    },
+    "4473122513": {
+      "first_seen": "2026-10-02T09:05:55+00:00",
+      "title": "İletişim Uzmanı"
+    },
+    "4473126291": {
+      "first_seen": "2026-10-02T09:05:55+00:00",
+      "title": "PAZARLAMA, DİJİTAL İLETİŞİM VE SATIŞ UZMANI"
     },
     "4473214353": {
       "first_seen": "2026-09-29T08:50:40+00:00",
@@ -6035,7 +6055,11 @@
     "4474597618": {
       "first_seen": "2026-10-02T06:50:34+00:00",
       "title": "Finance Team Leader"
+    },
+    "4474711409": {
+      "first_seen": "2026-10-02T09:05:55+00:00",
+      "title": "On Premise Marketing Manager"
     }
   },
-  "updated_at": "2026-10-02T07:50:31+00:00"
+  "updated_at": "2026-10-02T09:05:55+00:00"
 }
