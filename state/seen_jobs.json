@@ -5752,6 +5752,10 @@
       "first_seen": "2026-10-02T06:20:26+00:00",
       "title": "Finance & Operations Specialist"
     },
+    "4472887602": {
+      "first_seen": "2026-10-02T10:20:28+00:00",
+      "title": "Senior Marketing analyst"
+    },
     "4472900157": {
       "first_seen": "2026-10-01T07:20:31+00:00",
       "title": "Satış ve Pazarlama Asistanı"
@@ -5803,6 +5807,10 @@
     "4472918799": {
       "first_seen": "2026-10-01T13:20:45+00:00",
       "title": "Muhasebe & Finans Sorumlusu"
+    },
+    "4472920108": {
+      "first_seen": "2026-10-02T10:20:28+00:00",
+      "title": "Dijital Pazarlama Uzmanı"
     },
     "4472920208": {
       "first_seen": "2026-10-01T10:37:10+00:00",
@@ -5927,6 +5935,10 @@
     "4473122513": {
       "first_seen": "2026-10-02T09:05:55+00:00",
       "title": "İletişim Uzmanı"
+    },
+    "4473125733": {
+      "first_seen": "2026-10-02T10:20:28+00:00",
+      "title": "Sistem Yöneticisi (Linux & Windows)"
     },
     "4473126291": {
       "first_seen": "2026-10-02T09:05:55+00:00",
@@ -6081,5 +6093,5 @@
       "title": "On Premise Marketing Manager"
     }
   },
-  "updated_at": "2026-10-02T09:35:41+00:00"
+  "updated_at": "2026-10-02T10:20:29+00:00"
 }
