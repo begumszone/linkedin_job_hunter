@@ -5900,6 +5900,10 @@
       "first_seen": "2026-10-01T22:20:28+00:00",
       "title": "Finance Officer"
     },
+    "4472987155": {
+      "first_seen": "2026-10-02T17:50:28+00:00",
+      "title": "Satış Pazarlama Pozisyonları"
+    },
     "4472996903": {
       "first_seen": "2026-10-02T06:05:56+00:00",
       "title": "Performance Marketing Specialist"
@@ -6007,6 +6011,10 @@
     "4473150330": {
       "first_seen": "2026-10-02T13:20:33+00:00",
       "title": "Senior System Administrator"
+    },
+    "4473156922": {
+      "first_seen": "2026-10-02T17:50:28+00:00",
+      "title": "Otomasyon ve SCADA Sistemleri Mühendisi"
     },
     "4473159027": {
       "first_seen": "2026-10-02T14:20:37+00:00",
@@ -6197,5 +6205,5 @@
       "title": "Marketing Coordinator"
     }
   },
-  "updated_at": "2026-10-02T16:35:49+00:00"
+  "updated_at": "2026-10-02T17:50:29+00:00"
 }
