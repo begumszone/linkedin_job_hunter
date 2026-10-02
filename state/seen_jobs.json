@@ -516,6 +516,10 @@
       "first_seen": "2026-09-08T11:34:01+00:00",
       "title": "Bütçe, Raporlama ve Fiyatlama Uzmanı"
     },
+    "4450263376": {
+      "first_seen": "2026-10-02T11:20:31+00:00",
+      "title": "Dijital Pazarlama ve Veri Yönetimi Müdürü"
+    },
     "4450313528": {
       "first_seen": "2026-09-28T15:50:41+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
@@ -5940,9 +5944,17 @@
       "first_seen": "2026-10-02T10:20:28+00:00",
       "title": "Sistem Yöneticisi (Linux & Windows)"
     },
+    "4473125936": {
+      "first_seen": "2026-10-02T11:20:31+00:00",
+      "title": "UFRS Raporlama Uzmanı"
+    },
     "4473126291": {
       "first_seen": "2026-10-02T09:05:55+00:00",
       "title": "PAZARLAMA, DİJİTAL İLETİŞİM VE SATIŞ UZMANI"
+    },
+    "4473126831": {
+      "first_seen": "2026-10-02T11:20:31+00:00",
+      "title": "Sistem Çözümleri Mimari"
     },
     "4473129457": {
       "first_seen": "2026-10-02T10:50:36+00:00",
@@ -5955,6 +5967,10 @@
     "4473130427": {
       "first_seen": "2026-10-02T10:50:36+00:00",
       "title": "Senior System Engineer - Virtualization (VMware)"
+    },
+    "4473131644": {
+      "first_seen": "2026-10-02T11:20:31+00:00",
+      "title": "Finans ve Muhasebe Direktörü"
     },
     "4473132273": {
       "first_seen": "2026-10-02T09:35:40+00:00",
@@ -6105,5 +6121,5 @@
       "title": "IT Specialist"
     }
   },
-  "updated_at": "2026-10-02T10:50:37+00:00"
+  "updated_at": "2026-10-02T11:20:32+00:00"
 }
