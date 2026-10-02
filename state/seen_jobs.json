@@ -5984,9 +5984,17 @@
       "first_seen": "2026-10-02T12:20:32+00:00",
       "title": "Pazarlama Uzmanı"
     },
+    "4473148227": {
+      "first_seen": "2026-10-02T13:20:33+00:00",
+      "title": "Finans Uzmanı"
+    },
     "4473150034": {
       "first_seen": "2026-10-02T12:05:48+00:00",
       "title": "Finans Uzmanı - REF: 267QGQ8"
+    },
+    "4473150330": {
+      "first_seen": "2026-10-02T13:20:33+00:00",
+      "title": "Senior System Administrator"
     },
     "4473214353": {
       "first_seen": "2026-09-29T08:50:40+00:00",
@@ -6131,7 +6139,11 @@
     "4474719702": {
       "first_seen": "2026-10-02T10:50:36+00:00",
       "title": "IT Specialist"
+    },
+    "4474727979": {
+      "first_seen": "2026-10-02T13:20:33+00:00",
+      "title": "Marketing Manager"
     }
   },
-  "updated_at": "2026-10-02T12:20:32+00:00"
+  "updated_at": "2026-10-02T13:20:33+00:00"
 }
