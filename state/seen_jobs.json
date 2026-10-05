@@ -348,6 +348,10 @@
       "first_seen": "2026-09-13T13:52:52+00:00",
       "title": "Finance Manager"
     },
+    "4435977245": {
+      "first_seen": "2026-10-05T06:35:49+00:00",
+      "title": "Ödeme Sistemleri Çözümleri Yöneticisi"
+    },
     "4436310692": {
       "first_seen": "2026-09-14T10:49:10+00:00",
       "title": "Financial Reporting & Control Manager"
@@ -483,6 +487,10 @@
     "4446672499": {
       "first_seen": "2026-10-01T11:50:47+00:00",
       "title": "Sistem Destek Uzmanı"
+    },
+    "4446762910": {
+      "first_seen": "2026-10-05T06:35:49+00:00",
+      "title": "IT Cooling Systems Sales Consultant"
     },
     "4447370704": {
       "first_seen": "2026-09-10T10:48:55+00:00",
@@ -6232,6 +6240,14 @@
       "first_seen": "2026-10-04T17:21:26+00:00",
       "title": "Finans Uzmanı"
     },
+    "4473601944": {
+      "first_seen": "2026-10-05T06:35:49+00:00",
+      "title": "Pazarlama Sorumlusu - (Catering))"
+    },
+    "4473605832": {
+      "first_seen": "2026-10-05T06:35:49+00:00",
+      "title": "Influencer Marketing Specialist"
+    },
     "4473622018": {
       "first_seen": "2026-10-05T06:20:28+00:00",
       "title": "Finansal Danışman"
@@ -6425,5 +6441,5 @@
       "title": "Growth Marketing Lead (B2B SaaS & Payments)"
     }
   },
-  "updated_at": "2026-10-05T06:20:29+00:00"
+  "updated_at": "2026-10-05T06:35:50+00:00"
 }
