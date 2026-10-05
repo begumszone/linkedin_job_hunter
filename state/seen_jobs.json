@@ -28,6 +28,10 @@
       "first_seen": "2026-10-05T05:35:45+00:00",
       "title": "Satış Uzmanı (Lüks Markalar)"
     },
+    "4250899200": {
+      "first_seen": "2026-10-05T14:05:56+00:00",
+      "title": "Content Marketing Specialist"
+    },
     "4281258507": {
       "first_seen": "2026-09-21T10:34:05+00:00",
       "title": "Finans ve Muhasebe Müdürü (Finance & Accounting Manager)"
@@ -5936,6 +5940,10 @@
       "first_seen": "2026-10-01T14:06:20+00:00",
       "title": "Trade & Shopper Marketing Specialist"
     },
+    "4472933523": {
+      "first_seen": "2026-10-05T14:05:56+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4472934202": {
       "first_seen": "2026-10-01T14:06:20+00:00",
       "title": "Hasta İletişim ve Operasyon Sorumlusu"
@@ -6360,6 +6368,10 @@
       "first_seen": "2026-10-05T11:50:40+00:00",
       "title": "Özel Markalar Uzmanı"
     },
+    "4473628167": {
+      "first_seen": "2026-10-05T14:05:56+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4473628354": {
       "first_seen": "2026-10-05T09:20:49+00:00",
       "title": "Sosyal Medya Pazarlama"
@@ -6391,6 +6403,10 @@
     "4473635940": {
       "first_seen": "2026-10-05T13:50:39+00:00",
       "title": "Finansal Raporlama Yöneticisi"
+    },
+    "4473635946": {
+      "first_seen": "2026-10-05T14:05:56+00:00",
+      "title": "Performance Marketing Expert"
     },
     "4473641309": {
       "first_seen": "2026-10-05T11:06:31+00:00",
@@ -6427,6 +6443,10 @@
     "4473653139": {
       "first_seen": "2026-10-05T13:05:51+00:00",
       "title": "Ağ Sistemleri (Network) Uzmanı"
+    },
+    "4473659133": {
+      "first_seen": "2026-10-05T14:05:56+00:00",
+      "title": "Pazarlama Uzmanı"
     },
     "4473709714": {
       "first_seen": "2026-09-30T06:06:00+00:00",
@@ -6552,9 +6572,17 @@
       "first_seen": "2026-10-05T11:35:43+00:00",
       "title": "Kıdemli Raporlama Uzmanı"
     },
+    "4474278698": {
+      "first_seen": "2026-10-05T14:05:56+00:00",
+      "title": "IT Service Engineer"
+    },
     "4474281157": {
       "first_seen": "2026-10-05T13:05:51+00:00",
       "title": "Hazine Pazarlama Müdürü/Müdür Yardımcısı"
+    },
+    "4474281442": {
+      "first_seen": "2026-10-05T14:05:56+00:00",
+      "title": "IT Infrastructure Engineer (Server&Network)"
     },
     "4474374988": {
       "first_seen": "2026-10-01T19:49:51+00:00",
@@ -6673,5 +6701,5 @@
       "title": "C-VIP Accounting & Finance Specialist"
     }
   },
-  "updated_at": "2026-10-05T13:50:39+00:00"
+  "updated_at": "2026-10-05T14:05:56+00:00"
 }
