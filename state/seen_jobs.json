@@ -6668,9 +6668,17 @@
       "first_seen": "2026-10-06T11:35:38+00:00",
       "title": "Finansal Danışman"
     },
+    "4474052002": {
+      "first_seen": "2026-10-06T13:50:30+00:00",
+      "title": "Ön Muhasebe ve Finans Uzmanı"
+    },
     "4474052623": {
       "first_seen": "2026-10-06T11:35:38+00:00",
       "title": "Yurt ve Konaklama Bütçe Raporlama Uzmanı/Uzman Yard."
+    },
+    "4474054965": {
+      "first_seen": "2026-10-06T13:50:30+00:00",
+      "title": "Dijital Pazarlama ve E. Ticaret Uzmanı"
     },
     "4474055735": {
       "first_seen": "2026-10-06T13:06:11+00:00",
@@ -6680,6 +6688,10 @@
       "first_seen": "2026-10-06T10:50:27+00:00",
       "title": "Müşteri İlişkileri ve CRM Yöneticisi"
     },
+    "4474056981": {
+      "first_seen": "2026-10-06T13:50:30+00:00",
+      "title": "E-Ticaret ve Dijital Pazarlama Uzmanı"
+    },
     "4474063443": {
       "first_seen": "2026-10-06T12:35:50+00:00",
       "title": "Finans Uzmanı"
@@ -6687,6 +6699,10 @@
     "4474063509": {
       "first_seen": "2026-10-06T12:50:37+00:00",
       "title": "Influencer Marketing Manager – The Coca-Cola Company"
+    },
+    "4474065616": {
+      "first_seen": "2026-10-06T13:50:30+00:00",
+      "title": "Influencer Marketing Manager"
     },
     "4474066327": {
       "first_seen": "2026-10-06T12:50:37+00:00",
@@ -6696,9 +6712,17 @@
       "first_seen": "2026-10-06T13:06:11+00:00",
       "title": "The Whirl / Bütçe ve Raporlama Uzmanı"
     },
+    "4474069437": {
+      "first_seen": "2026-10-06T13:50:30+00:00",
+      "title": "Kurumsal İletişim Uzmanı"
+    },
     "4474071046": {
       "first_seen": "2026-10-06T12:50:37+00:00",
       "title": "Resmi Raporlama Yönetmeni"
+    },
+    "4474071283": {
+      "first_seen": "2026-10-06T13:50:30+00:00",
+      "title": "Dijital Marka Yöneticisi"
     },
     "4474117852": {
       "first_seen": "2026-10-01T16:35:40+00:00",
@@ -6961,5 +6985,5 @@
       "title": "Finans ve Bütçe Uzmanı"
     }
   },
-  "updated_at": "2026-10-06T13:06:11+00:00"
+  "updated_at": "2026-10-06T13:50:31+00:00"
 }
