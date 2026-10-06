@@ -568,6 +568,10 @@
       "first_seen": "2026-09-29T07:51:20+00:00",
       "title": "IT System Specialist"
     },
+    "4450498200": {
+      "first_seen": "2026-10-06T07:35:48+00:00",
+      "title": "IT Security Specialist/Senior Specialist"
+    },
     "4450817025": {
       "first_seen": "2026-10-05T08:50:38+00:00",
       "title": "Influencer Marketing Specialist"
@@ -1431,6 +1435,10 @@
     "4463004015": {
       "first_seen": "2026-09-09T07:04:23+00:00",
       "title": "Satış Planlama ve Raporlama Uzmanı"
+    },
+    "4463005852": {
+      "first_seen": "2026-10-06T07:35:48+00:00",
+      "title": "Sistem Yönetimi Uzmanı"
     },
     "4463006175": {
       "first_seen": "2026-09-09T07:48:52+00:00",
@@ -6584,6 +6592,18 @@
       "first_seen": "2026-10-06T05:05:48+00:00",
       "title": "BT Teknik Destek Uzmanı"
     },
+    "4474024751": {
+      "first_seen": "2026-10-06T07:35:48+00:00",
+      "title": "Kıdemli Pazarlama Yöneticisi"
+    },
+    "4474027507": {
+      "first_seen": "2026-10-06T07:35:48+00:00",
+      "title": "Finansal Raporlama ve Konsolidasyon Bölüm Sorumlusu (Sözleşmeli)"
+    },
+    "4474037293": {
+      "first_seen": "2026-10-06T07:35:48+00:00",
+      "title": "Commercial Marketing Category Executive (Yogurt)"
+    },
     "4474117852": {
       "first_seen": "2026-10-01T16:35:40+00:00",
       "title": "Finance Assistant"
@@ -6787,7 +6807,11 @@
     "4476139779": {
       "first_seen": "2026-10-06T07:20:30+00:00",
       "title": "Pazarlama Uzmanı"
+    },
+    "4476151439": {
+      "first_seen": "2026-10-06T07:35:48+00:00",
+      "title": "Business Analyst - Treasury"
     }
   },
-  "updated_at": "2026-10-06T07:20:30+00:00"
+  "updated_at": "2026-10-06T07:35:49+00:00"
 }
