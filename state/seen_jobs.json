@@ -6748,6 +6748,10 @@
       "first_seen": "2026-10-06T14:05:48+00:00",
       "title": "Finans Danışmanı"
     },
+    "4474081076": {
+      "first_seen": "2026-10-06T14:50:33+00:00",
+      "title": "Yetiştirilmek Üzere Saha Satış Pazarlama Uzmanı"
+    },
     "4474117852": {
       "first_seen": "2026-10-01T16:35:40+00:00",
       "title": "Finance Assistant"
@@ -6867,6 +6871,14 @@
     "4474944693": {
       "first_seen": "2026-10-06T13:06:11+00:00",
       "title": "Sistem Destek Uzmanı"
+    },
+    "4474958647": {
+      "first_seen": "2026-10-06T14:50:33+00:00",
+      "title": "Sistem Destek Uzmanı"
+    },
+    "4474967336": {
+      "first_seen": "2026-10-06T14:50:33+00:00",
+      "title": "Bütçe Konsolidasyon ve İştirakler Raporlama Uzmanı"
     },
     "4475021410": {
       "first_seen": "2026-10-02T20:05:43+00:00",
@@ -7011,7 +7023,11 @@
     "4476197456": {
       "first_seen": "2026-10-06T14:20:33+00:00",
       "title": "IT Destek Asistanı"
+    },
+    "4476304655": {
+      "first_seen": "2026-10-06T14:50:33+00:00",
+      "title": "Engineering Manager (Distributed P2P Systems)"
     }
   },
-  "updated_at": "2026-10-06T14:36:01+00:00"
+  "updated_at": "2026-10-06T14:50:34+00:00"
 }
