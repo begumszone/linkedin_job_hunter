@@ -6984,6 +6984,10 @@
       "first_seen": "2026-10-07T06:51:05+00:00",
       "title": "CRM Manager"
     },
+    "4475184900": {
+      "first_seen": "2026-10-07T08:50:41+00:00",
+      "title": "Finans Analisti"
+    },
     "4475198094": {
       "first_seen": "2026-10-07T07:51:06+00:00",
       "title": "Savunma Sistem Teknolojileri Gömülü Yazılım Tasarım Mühendisi"
@@ -7160,14 +7164,22 @@
       "first_seen": "2026-10-07T07:36:01+00:00",
       "title": "Finance & Accounting Specialist"
     },
+    "4476565778": {
+      "first_seen": "2026-10-07T08:50:41+00:00",
+      "title": "Senior Software Engineer - Treasury Domain"
+    },
     "4476569000": {
       "first_seen": "2026-10-07T07:36:01+00:00",
       "title": "Budget and Reporting Specialist"
+    },
+    "4476585310": {
+      "first_seen": "2026-10-07T08:50:41+00:00",
+      "title": "Financial Reporting Executive"
     },
     "4476588128": {
       "first_seen": "2026-10-07T08:36:16+00:00",
       "title": "Finance Digital Transformation Architect (SAP /FI)"
     }
   },
-  "updated_at": "2026-10-07T08:36:16+00:00"
+  "updated_at": "2026-10-07T08:50:41+00:00"
 }
