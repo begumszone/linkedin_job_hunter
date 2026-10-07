@@ -112,6 +112,17 @@ searches:
     exclude:
       - stajyer
       - intern
+      # "sistem" kelimesi IT dışı alanlarda da geçtiği için gürültü filtresi
+      - control systems
+      - kontrol sistemleri
+      - enerji
+      - energy
+      - batarya
+      - battery
+      - quality
+      - kalite
+      - backend
+      - technician
     exclude_locations:
       - Romanya
       - Romania
