@@ -6700,6 +6700,10 @@
       "first_seen": "2026-10-06T08:50:34+00:00",
       "title": "IT Technician"
     },
+    "4474043368": {
+      "first_seen": "2026-10-08T09:05:56+00:00",
+      "title": "Finansal Güvence Danışmanı"
+    },
     "4474047445": {
       "first_seen": "2026-10-06T09:50:31+00:00",
       "title": "Digital Technology & System Desing Executive"
@@ -7487,7 +7491,15 @@
     "4477126527": {
       "first_seen": "2026-10-08T08:20:32+00:00",
       "title": "Bütçe ve Raporlama Yöneticisi"
+    },
+    "4477132336": {
+      "first_seen": "2026-10-08T09:05:56+00:00",
+      "title": "Finans Uzmanı"
+    },
+    "4477132348": {
+      "first_seen": "2026-10-08T09:05:56+00:00",
+      "title": "Embedded System Software Engineer"
     }
   },
-  "updated_at": "2026-10-08T08:50:22+00:00"
+  "updated_at": "2026-10-08T09:05:56+00:00"
 }
