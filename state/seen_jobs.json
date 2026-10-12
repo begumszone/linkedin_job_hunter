@@ -124,6 +124,10 @@
       "first_seen": "2026-09-08T12:48:54+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
     },
+    "4358031808": {
+      "first_seen": "2026-10-12T07:35:50+00:00",
+      "title": "Antrepo Satış ve Pazarlama Uzmanı"
+    },
     "4360583169": {
       "first_seen": "2026-09-24T12:06:29+00:00",
       "title": "Finans Uzmanı"
@@ -7576,6 +7580,10 @@
       "first_seen": "2026-10-12T06:35:58+00:00",
       "title": "BT Müfettişi"
     },
+    "4475698106": {
+      "first_seen": "2026-10-12T07:35:50+00:00",
+      "title": "İletişim Merkezi Temsilcisi"
+    },
     "4475756639": {
       "first_seen": "2026-10-08T07:05:57+00:00",
       "title": "Uzman Sistem Mühendisi"
@@ -8107,7 +8115,15 @@
     "4478396055": {
       "first_seen": "2026-10-12T07:05:52+00:00",
       "title": "Director of Sales & Marketing"
+    },
+    "4478399057": {
+      "first_seen": "2026-10-12T07:35:50+00:00",
+      "title": "Performans Pazarlama Uzmanı"
+    },
+    "4478501029": {
+      "first_seen": "2026-10-12T07:35:50+00:00",
+      "title": "CRM Uzman/Uzman Yardımcısı"
     }
   },
-  "updated_at": "2026-10-12T07:20:28+00:00"
+  "updated_at": "2026-10-12T07:35:51+00:00"
 }
