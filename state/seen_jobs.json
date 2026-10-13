@@ -8128,6 +8128,10 @@
       "first_seen": "2026-10-13T12:06:23+00:00",
       "title": "Finansal Kontrol ve Raporlama Uzmanı"
     },
+    "4476439541": {
+      "first_seen": "2026-10-13T14:05:00+00:00",
+      "title": "Satış ve Pazarlama Uzman Yardımcısı"
+    },
     "4476446122": {
       "first_seen": "2026-10-13T13:50:35+00:00",
       "title": "Kurumsal ve Digital İletişim Sorumlusu"
@@ -8135,6 +8139,10 @@
     "4476447198": {
       "first_seen": "2026-10-13T13:50:35+00:00",
       "title": "Satış ve Pazarlama Temsilcisi"
+    },
+    "4476449145": {
+      "first_seen": "2026-10-13T14:05:00+00:00",
+      "title": "Management Trainee (System & Process Development)"
     },
     "4476523842": {
       "first_seen": "2026-10-07T02:20:30+00:00",
@@ -8625,5 +8633,5 @@
       "title": "Sistem Destek Uzmanı"
     }
   },
-  "updated_at": "2026-10-13T13:50:35+00:00"
+  "updated_at": "2026-10-13T14:05:01+00:00"
 }
