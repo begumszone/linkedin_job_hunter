@@ -8580,6 +8580,10 @@
       "first_seen": "2026-10-07T20:20:30+00:00",
       "title": "Finance Supervisor"
     },
+    "4477002486": {
+      "first_seen": "2026-10-14T21:07:48+00:00",
+      "title": "Finansal Kontrol Uzmanı"
+    },
     "4477003269": {
       "first_seen": "2026-10-14T20:36:03+00:00",
       "title": "Marketing Manager"
@@ -9045,5 +9049,5 @@
       "title": "Pazarlama Yöneticisi"
     }
   },
-  "updated_at": "2026-10-14T20:51:26+00:00"
+  "updated_at": "2026-10-14T21:07:49+00:00"
 }
