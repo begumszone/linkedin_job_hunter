@@ -8580,6 +8580,10 @@
       "first_seen": "2026-10-07T20:20:30+00:00",
       "title": "Finance Supervisor"
     },
+    "4477003269": {
+      "first_seen": "2026-10-14T20:36:03+00:00",
+      "title": "Marketing Manager"
+    },
     "4477100752": {
       "first_seen": "2026-10-08T06:05:51+00:00",
       "title": "Çevresel Sistemler Yönetimi Uzmanı"
@@ -9035,7 +9039,11 @@
     "4479553206": {
       "first_seen": "2026-10-14T16:21:18+00:00",
       "title": "Lojistik Planlama ve Raporlama Uzmanı"
+    },
+    "4479589671": {
+      "first_seen": "2026-10-14T20:36:03+00:00",
+      "title": "Pazarlama Yöneticisi"
     }
   },
-  "updated_at": "2026-10-14T20:21:11+00:00"
+  "updated_at": "2026-10-14T20:36:04+00:00"
 }
