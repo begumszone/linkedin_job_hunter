@@ -1,5 +1,9 @@
 {
   "jobs": {
+    "1725742953": {
+      "first_seen": "2026-10-15T07:09:41+00:00",
+      "title": "Pazarlama Asistanı"
+    },
     "3452260199": {
       "first_seen": "2026-09-30T15:05:53+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
@@ -7584,6 +7588,10 @@
       "first_seen": "2026-10-10T19:37:35+00:00",
       "title": "Dijital Pazarlama Uzmanı"
     },
+    "4475647711": {
+      "first_seen": "2026-10-15T07:09:41+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4475652535": {
       "first_seen": "2026-10-11T10:07:47+00:00",
       "title": "Dijital Pazarlama Uzmanı"
@@ -8600,6 +8608,10 @@
       "first_seen": "2026-10-14T20:36:03+00:00",
       "title": "Marketing Manager"
     },
+    "4477041989": {
+      "first_seen": "2026-10-15T07:09:41+00:00",
+      "title": "Pazarlama İletişimi Müdürü"
+    },
     "4477046643": {
       "first_seen": "2026-10-15T06:08:17+00:00",
       "title": "Spoticar Pazarlama Yöneticisi"
@@ -8607,6 +8619,18 @@
     "4477048681": {
       "first_seen": "2026-10-15T05:51:13+00:00",
       "title": "Finans Yöneticisi"
+    },
+    "4477048843": {
+      "first_seen": "2026-10-15T07:09:41+00:00",
+      "title": "Head of Systems"
+    },
+    "4477050560": {
+      "first_seen": "2026-10-15T07:09:41+00:00",
+      "title": "Görsel İletişim Tasarımcı"
+    },
+    "4477061265": {
+      "first_seen": "2026-10-15T07:09:41+00:00",
+      "title": "Kıdemli Sistem Destek Uzmanı"
     },
     "4477100752": {
       "first_seen": "2026-10-08T06:05:51+00:00",
@@ -8968,6 +8992,10 @@
       "first_seen": "2026-10-13T06:38:02+00:00",
       "title": "HR Data Management & Reporting Executive"
     },
+    "4478761580": {
+      "first_seen": "2026-10-15T07:09:41+00:00",
+      "title": "Corporate Finance Manager"
+    },
     "4478763835": {
       "first_seen": "2026-10-13T10:17:28+00:00",
       "title": "Dijital Pazarlama Uzmanı"
@@ -9077,5 +9105,5 @@
       "title": "Dijital Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-10-15T06:53:21+00:00"
+  "updated_at": "2026-10-15T07:09:41+00:00"
 }
