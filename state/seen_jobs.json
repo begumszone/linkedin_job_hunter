@@ -8976,6 +8976,10 @@
       "first_seen": "2026-10-16T09:52:13+00:00",
       "title": "Marketing & Communications Specialist"
     },
+    "4477374439": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "Global Business IT and Technology Partnering Specialist"
+    },
     "4477374575": {
       "first_seen": "2026-10-16T10:23:43+00:00",
       "title": "Growth Marketing Manager"
@@ -9012,6 +9016,10 @@
       "first_seen": "2026-10-16T13:51:27+00:00",
       "title": "Muhasebe ve Finans Yöneticisi"
     },
+    "4477391985": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "Kıdemli Dijital Pazarlama Uzmanı"
+    },
     "4477392530": {
       "first_seen": "2026-10-16T14:36:51+00:00",
       "title": "Satış ve Pazarlama Temsilcisi"
@@ -9024,6 +9032,10 @@
       "first_seen": "2026-10-16T14:36:51+00:00",
       "title": "System Support Specialist"
     },
+    "4477393765": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "Credit Monitoring & Reporting Analytics Manager"
+    },
     "4477394171": {
       "first_seen": "2026-10-16T12:52:07+00:00",
       "title": "Sistem Uzmanı"
@@ -9031,6 +9043,10 @@
     "4477395382": {
       "first_seen": "2026-10-16T14:36:51+00:00",
       "title": "Brand Marketing Team Lead"
+    },
+    "4477399567": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "Growth & Performance Marketing Specialist"
     },
     "4477401251": {
       "first_seen": "2026-10-08T14:50:38+00:00",
@@ -9115,6 +9131,14 @@
     "4477701096": {
       "first_seen": "2026-10-16T13:05:11+00:00",
       "title": "Marketing Manager"
+    },
+    "4477703421": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "Finans ve Ön Muhasebe Uzmanı"
+    },
+    "4477706329": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "Satış ve Pazarlama Temsilcisi"
     },
     "4477835044": {
       "first_seen": "2026-10-09T16:35:39+00:00",
@@ -9376,9 +9400,21 @@
       "first_seen": "2026-10-16T15:21:27+00:00",
       "title": "Senior Business Analyst(Treasury)"
     },
+    "4479371393": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4479373214": {
       "first_seen": "2026-10-16T14:36:51+00:00",
       "title": "Dış Ticaret Finansmanı Ürün Geliştirme Yönetmeni"
+    },
+    "4479378107": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "BÜTÇE RAPORLAMA UZMANI"
+    },
+    "4479380056": {
+      "first_seen": "2026-10-16T15:51:06+00:00",
+      "title": "Marka Satış Asistanı"
     },
     "4479500094": {
       "first_seen": "2026-10-14T09:04:37+00:00",
@@ -9493,5 +9529,5 @@
       "title": "Finans Uzmanı"
     }
   },
-  "updated_at": "2026-10-16T15:37:33+00:00"
+  "updated_at": "2026-10-16T15:51:07+00:00"
 }
