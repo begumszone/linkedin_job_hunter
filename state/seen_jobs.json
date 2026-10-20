@@ -9804,6 +9804,14 @@
       "first_seen": "2026-10-20T09:35:55+00:00",
       "title": "Marka Müdür Yardımcısı(Gıda Takviyeleri)"
     },
+    "4478666720": {
+      "first_seen": "2026-10-20T09:52:07+00:00",
+      "title": "Kıdemli Finans Uzmanı"
+    },
+    "4478666735": {
+      "first_seen": "2026-10-20T09:52:07+00:00",
+      "title": "IT System Administrator"
+    },
     "4478702581": {
       "first_seen": "2026-10-12T23:04:51+00:00",
       "title": "IT SYSTEM ADMINISTRATOR"
@@ -10188,10 +10196,14 @@
       "first_seen": "2026-10-20T06:52:12+00:00",
       "title": "Sistem Tasarım Mühendisi"
     },
+    "4481550783": {
+      "first_seen": "2026-10-20T09:52:07+00:00",
+      "title": "Systems Manager"
+    },
     "4481555309": {
       "first_seen": "2026-10-20T09:06:48+00:00",
       "title": "Financial Controlling Assistant Manager"
     }
   },
-  "updated_at": "2026-10-20T09:35:55+00:00"
+  "updated_at": "2026-10-20T09:52:08+00:00"
 }
