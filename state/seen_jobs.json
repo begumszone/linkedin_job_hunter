@@ -10276,6 +10276,10 @@
       "first_seen": "2026-10-22T07:20:34+00:00",
       "title": "Sistem Güvenliği Uzmanı"
     },
+    "4479498973": {
+      "first_seen": "2026-10-22T08:35:40+00:00",
+      "title": "Kıdemli Ürün ve Sistem Mühendisi"
+    },
     "4479500094": {
       "first_seen": "2026-10-14T09:04:37+00:00",
       "title": "Finansal Operasyonlar Müdürü"
@@ -10379,6 +10383,10 @@
     "4480006251": {
       "first_seen": "2026-10-22T07:50:29+00:00",
       "title": "Marketing Specialist"
+    },
+    "4480010503": {
+      "first_seen": "2026-10-22T08:35:40+00:00",
+      "title": "Sistem Test ve Doğrulama Mühendisi"
     },
     "4480012316": {
       "first_seen": "2026-10-22T08:05:54+00:00",
@@ -10685,5 +10693,5 @@
       "title": "Sistem Mimarı"
     }
   },
-  "updated_at": "2026-10-22T08:20:23+00:00"
+  "updated_at": "2026-10-22T08:35:40+00:00"
 }
