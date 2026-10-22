@@ -304,6 +304,10 @@
       "first_seen": "2026-10-04T11:20:30+00:00",
       "title": "Head of IT Mobility Operations"
     },
+    "4425480412": {
+      "first_seen": "2026-10-22T10:05:55+00:00",
+      "title": "Budget and Reporting Supervisor"
+    },
     "4425816871": {
       "first_seen": "2026-09-07T12:42:10+00:00",
       "title": "Finansal ve Yasal Raporlama Uzmanı"
@@ -10400,6 +10404,10 @@
       "first_seen": "2026-10-22T08:05:54+00:00",
       "title": "Muhasebe ve Finans Uzmanı"
     },
+    "4480012736": {
+      "first_seen": "2026-10-22T10:05:55+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4480013469": {
       "first_seen": "2026-10-22T09:20:24+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
@@ -10407,6 +10415,10 @@
     "4480018114": {
       "first_seen": "2026-10-22T09:20:24+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
+    },
+    "4480033298": {
+      "first_seen": "2026-10-22T10:05:55+00:00",
+      "title": "Reporting & Settlement Supervisor (Carlcare)"
     },
     "4480108541": {
       "first_seen": "2026-10-15T18:36:45+00:00",
@@ -10713,5 +10725,5 @@
       "title": "Sistem Mimarı"
     }
   },
-  "updated_at": "2026-10-22T09:50:26+00:00"
+  "updated_at": "2026-10-22T10:05:56+00:00"
 }
