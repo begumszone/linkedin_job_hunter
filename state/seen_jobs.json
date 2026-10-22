@@ -10272,6 +10272,10 @@
       "first_seen": "2026-10-22T07:05:56+00:00",
       "title": "Pazarlamacı"
     },
+    "4479498433": {
+      "first_seen": "2026-10-22T07:20:34+00:00",
+      "title": "Sistem Güvenliği Uzmanı"
+    },
     "4479500094": {
       "first_seen": "2026-10-14T09:04:37+00:00",
       "title": "Finansal Operasyonlar Müdürü"
@@ -10673,5 +10677,5 @@
       "title": "Sistem Mimarı"
     }
   },
-  "updated_at": "2026-10-22T07:05:57+00:00"
+  "updated_at": "2026-10-22T07:20:34+00:00"
 }
