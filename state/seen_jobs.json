@@ -10604,9 +10604,17 @@
       "first_seen": "2026-10-17T00:51:29+00:00",
       "title": "Director of Marketing and Communication"
     },
+    "4480611856": {
+      "first_seen": "2026-10-23T05:50:56+00:00",
+      "title": "Finans Uzmanı"
+    },
     "4480616400": {
       "first_seen": "2026-10-23T05:06:11+00:00",
       "title": "Lider Savaş Sistemleri Mühendisi"
+    },
+    "4480625122": {
+      "first_seen": "2026-10-23T05:50:56+00:00",
+      "title": "Finans Uzmanı"
     },
     "4480708328": {
       "first_seen": "2026-10-20T19:06:02+00:00",
@@ -10853,5 +10861,5 @@
       "title": "Senior System Designer - Mob Control"
     }
   },
-  "updated_at": "2026-10-23T05:35:34+00:00"
+  "updated_at": "2026-10-23T05:50:57+00:00"
 }
