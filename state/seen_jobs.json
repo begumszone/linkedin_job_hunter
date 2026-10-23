@@ -10660,6 +10660,10 @@
       "first_seen": "2026-10-23T11:50:44+00:00",
       "title": "Reporting & Settlement Supervisor"
     },
+    "4480648505": {
+      "first_seen": "2026-10-23T15:36:09+00:00",
+      "title": "Kurumsal İletişim Uzmanı"
+    },
     "4480654591": {
       "first_seen": "2026-10-23T11:50:44+00:00",
       "title": "Finans Yöneticisi"
@@ -10715,6 +10719,10 @@
     "4480675253": {
       "first_seen": "2026-10-23T15:06:45+00:00",
       "title": "Server Solution Manager"
+    },
+    "4480682099": {
+      "first_seen": "2026-10-23T15:36:09+00:00",
+      "title": "Pazarlama Yöneticisi (Kozmetik Sektörü Dneyimli)"
     },
     "4480708328": {
       "first_seen": "2026-10-20T19:06:02+00:00",
@@ -11001,5 +11009,5 @@
       "title": "Finance Specialist"
     }
   },
-  "updated_at": "2026-10-23T15:21:49+00:00"
+  "updated_at": "2026-10-23T15:36:10+00:00"
 }
