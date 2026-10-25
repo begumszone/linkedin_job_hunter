@@ -92,8 +92,15 @@ jobs:
           cp state/seen_jobs.json "${RUNNER_TEMP}/mine.json"
 
           for attempt in 1 2 3 4; do
-            git fetch -q origin "${GITHUB_REF_NAME}"
-            git reset -q --hard "origin/${GITHUB_REF_NAME}"
+            # fetch/reset ağ üzerinden çalışır ve GitHub kaynaklı anlık
+            # kesintilerde 128 ile düşer. Adımı öldürmesin: bir sonraki
+            # denemeye geçelim, kayıt dosyası elimizde duruyor.
+            if ! git fetch -q origin "${GITHUB_REF_NAME}" \
+               || ! git reset -q --hard "origin/${GITHUB_REF_NAME}"; then
+              echo "Depo güncellenemedi (deneme ${attempt}), tekrar denenecek." >&2
+              sleep $((attempt * 5))
+              continue
+            fi
 
             # Başka bir tur bu arada kendi kaydını yazmış olabilir. JSON'u
             # rebase etmek çakışır; iki turun gördüğü ilanların birleşimi ise
