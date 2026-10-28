@@ -11352,6 +11352,10 @@
       "first_seen": "2026-10-27T11:38:21+00:00",
       "title": "Lider Bütçe, Raporlama ve UFRS Uzmanı"
     },
+    "4481882553": {
+      "first_seen": "2026-10-28T12:20:42+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4481883279": {
       "first_seen": "2026-10-27T13:03:09+00:00",
       "title": "System and Network Administration Team Member"
@@ -11616,6 +11620,10 @@
       "first_seen": "2026-10-26T09:20:52+00:00",
       "title": "Bilgi Sistemleri Kontrol-Denetçi Yardımcısı"
     },
+    "4482957292": {
+      "first_seen": "2026-10-28T12:20:42+00:00",
+      "title": "İhracat Satış ve Pazarlama Sorumlusu, İzmir"
+    },
     "4483133118": {
       "first_seen": "2026-10-23T18:09:29+00:00",
       "title": "Senior Controlling Specialist"
@@ -11787,7 +11795,11 @@
     "4484430409": {
       "first_seen": "2026-10-28T07:36:40+00:00",
       "title": "Digital Ad Operations Specialist"
+    },
+    "4484464202": {
+      "first_seen": "2026-10-28T12:20:42+00:00",
+      "title": "Server"
     }
   },
-  "updated_at": "2026-10-28T12:06:01+00:00"
+  "updated_at": "2026-10-28T12:20:43+00:00"
 }
