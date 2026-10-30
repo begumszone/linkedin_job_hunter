@@ -11788,6 +11788,10 @@
       "first_seen": "2026-10-30T07:06:39+00:00",
       "title": "Finans Uzman Yardımcısı"
     },
+    "4483420804": {
+      "first_seen": "2026-10-30T09:36:22+00:00",
+      "title": "Satış ve Pazarlama Temsilcisi"
+    },
     "4483422411": {
       "first_seen": "2026-10-30T07:06:39+00:00",
       "title": "Bütçe ve Finans Uzmanı"
@@ -11803,6 +11807,10 @@
     "4483427492": {
       "first_seen": "2026-10-30T08:36:17+00:00",
       "title": "Dijital Pazarlama Yöneticisi"
+    },
+    "4483427602": {
+      "first_seen": "2026-10-30T09:36:22+00:00",
+      "title": "Dijital Pazarlama Uzmanı"
     },
     "4483431011": {
       "first_seen": "2026-10-30T06:21:00+00:00",
@@ -12000,6 +12008,14 @@
       "first_seen": "2026-10-29T05:36:03+00:00",
       "title": "Marketing Manager - Neuromodulation"
     },
+    "4484820801": {
+      "first_seen": "2026-10-30T09:36:22+00:00",
+      "title": "Bilgi Teknolojileri Sistem Yönetimi Destek Yetkilisi"
+    },
+    "4484825563": {
+      "first_seen": "2026-10-30T09:36:22+00:00",
+      "title": "Marka ve Kurumsal İletişim Müdürü"
+    },
     "4484912477": {
       "first_seen": "2026-10-29T07:06:50+00:00",
       "title": "Systems Engineer - Telco"
@@ -12017,5 +12033,5 @@
       "title": "Aviyonik Donanım ve Sistem Tasarım Mühendisi"
     }
   },
-  "updated_at": "2026-10-30T09:20:56+00:00"
+  "updated_at": "2026-10-30T09:36:22+00:00"
 }
