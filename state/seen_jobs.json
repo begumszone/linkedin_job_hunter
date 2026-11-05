@@ -1156,6 +1156,10 @@
       "first_seen": "2026-09-07T12:42:10+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
     },
+    "4461874898": {
+      "first_seen": "2026-11-05T06:50:45+00:00",
+      "title": "ERP Systems Development Senior Analyst"
+    },
     "4461875990": {
       "first_seen": "2026-09-07T12:42:10+00:00",
       "title": "Marketing Executive"
@@ -12920,6 +12924,18 @@
       "first_seen": "2026-11-05T05:35:56+00:00",
       "title": "System Administration and Security Specialist"
     },
+    "4485585606": {
+      "first_seen": "2026-11-05T06:50:45+00:00",
+      "title": "Junior System Analyst"
+    },
+    "4485586705": {
+      "first_seen": "2026-11-05T06:50:45+00:00",
+      "title": "Marka İletişim Uzmanı"
+    },
+    "4485587711": {
+      "first_seen": "2026-11-05T06:50:45+00:00",
+      "title": "Senior IT Operations & Solutions Specialist"
+    },
     "4485684253": {
       "first_seen": "2026-10-31T10:50:46+00:00",
       "title": "Satış Pazarlama Müdürü"
@@ -13133,5 +13149,5 @@
       "title": "Medya Satış Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-11-05T06:35:48+00:00"
+  "updated_at": "2026-11-05T06:50:45+00:00"
 }
