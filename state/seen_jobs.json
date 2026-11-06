@@ -8508,6 +8508,10 @@
       "first_seen": "2026-10-07T09:06:04+00:00",
       "title": "Kıdemli Çevresel Sistemler"
     },
+    "4476574696": {
+      "first_seen": "2026-11-06T14:06:57+00:00",
+      "title": "Marka Yöneticisi"
+    },
     "4476579014": {
       "first_seen": "2026-10-10T08:20:28+00:00",
       "title": "Satış ve Pazarlama Uzmanı"
@@ -11003,6 +11007,10 @@
     "4481049074": {
       "first_seen": "2026-10-24T10:49:32+00:00",
       "title": "Dijital Pazarlama Uzmanı"
+    },
+    "4481049271": {
+      "first_seen": "2026-11-06T14:06:57+00:00",
+      "title": "Marka Operasyon Uzmanı"
     },
     "4481050230": {
       "first_seen": "2026-10-24T12:53:51+00:00",
@@ -13521,5 +13529,5 @@
       "title": "Medya Satış Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-11-06T13:50:46+00:00"
+  "updated_at": "2026-11-06T14:06:57+00:00"
 }
