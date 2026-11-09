@@ -13252,6 +13252,10 @@
       "first_seen": "2026-11-06T09:50:49+00:00",
       "title": "IT Infrastructure and Operations Manager"
     },
+    "4486226926": {
+      "first_seen": "2026-11-09T07:06:36+00:00",
+      "title": "Pazarlama Yönetmeni"
+    },
     "4486227315": {
       "first_seen": "2026-11-07T08:50:38+00:00",
       "title": "Finansal Danışman"
@@ -13588,6 +13592,10 @@
       "first_seen": "2026-11-09T06:07:11+00:00",
       "title": "Zayıf Akım Sistemleri Montaj Personeli"
     },
+    "4487128506": {
+      "first_seen": "2026-11-09T07:06:36+00:00",
+      "title": "IT Specialist"
+    },
     "4487134176": {
       "first_seen": "2026-11-09T05:38:01+00:00",
       "title": "Finance Treasury Manager"
@@ -13643,6 +13651,22 @@
     "4487669162": {
       "first_seen": "2026-11-08T20:51:00+00:00",
       "title": "IT Infrastructure Manager - (Infrastructure / Cloud / Data Centre)"
+    },
+    "4487674947": {
+      "first_seen": "2026-11-09T07:06:36+00:00",
+      "title": "Marka Yöneticisi"
+    },
+    "4487675940": {
+      "first_seen": "2026-11-09T07:06:36+00:00",
+      "title": "Marka Uzmanı"
+    },
+    "4487676771": {
+      "first_seen": "2026-11-09T07:06:36+00:00",
+      "title": "Kurumsal İletişim Uzmanı"
+    },
+    "4487692101": {
+      "first_seen": "2026-11-09T07:06:36+00:00",
+      "title": "Marketing Operations Manager (fixed term)"
     },
     "4487716315": {
       "first_seen": "2026-11-05T05:35:56+00:00",
@@ -13753,5 +13777,5 @@
       "title": "Medya Satış Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-11-09T06:51:37+00:00"
+  "updated_at": "2026-11-09T07:06:36+00:00"
 }
