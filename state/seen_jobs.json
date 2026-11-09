@@ -13600,6 +13600,10 @@
       "first_seen": "2026-11-09T06:07:11+00:00",
       "title": "Zayıf Akım Sistemleri Montaj Personeli"
     },
+    "4487127632": {
+      "first_seen": "2026-11-09T08:20:45+00:00",
+      "title": "Satış ve Pazarlama Uzmanı"
+    },
     "4487127758": {
       "first_seen": "2026-11-09T08:05:45+00:00",
       "title": "CRM UZMANI"
@@ -13624,6 +13628,10 @@
       "first_seen": "2026-11-09T06:36:58+00:00",
       "title": "Kurumsal Krediler ve Finansal Kurumlar Yönetmeni"
     },
+    "4487135298": {
+      "first_seen": "2026-11-09T08:20:45+00:00",
+      "title": "Sistem ve Sanallaştırma Uzmanı"
+    },
     "4487137243": {
       "first_seen": "2026-11-09T07:21:01+00:00",
       "title": "Hastane Bilgi Sistemleri (HBYS) Destek Uzmanı"
@@ -13631,6 +13639,10 @@
     "4487139245": {
       "first_seen": "2026-11-09T07:51:38+00:00",
       "title": "Reporting Specialist (Aftersales)"
+    },
+    "4487139384": {
+      "first_seen": "2026-11-09T08:20:45+00:00",
+      "title": "Sistem ve Destek Mühendisi"
     },
     "4487242136": {
       "first_seen": "2026-11-04T08:50:27+00:00",
@@ -13817,5 +13829,5 @@
       "title": "Medya Satış Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-11-09T08:05:45+00:00"
+  "updated_at": "2026-11-09T08:20:46+00:00"
 }
