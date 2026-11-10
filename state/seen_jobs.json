@@ -13804,6 +13804,10 @@
       "first_seen": "2026-11-10T06:24:46+00:00",
       "title": "Görsel İletişim Sorumlusu"
     },
+    "4487450472": {
+      "first_seen": "2026-11-10T07:35:21+00:00",
+      "title": "Reporting Supervisor"
+    },
     "4487520399": {
       "first_seen": "2026-11-04T18:36:07+00:00",
       "title": "Marketing Manager"
@@ -14041,5 +14045,5 @@
       "title": "Medya Satış Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-11-10T07:21:01+00:00"
+  "updated_at": "2026-11-10T07:35:21+00:00"
 }
