@@ -14708,9 +14708,17 @@
       "first_seen": "2026-11-13T12:50:39+00:00",
       "title": "Budget&Reporting Supervisor"
     },
+    "4488941601": {
+      "first_seen": "2026-11-13T15:06:00+00:00",
+      "title": "Performans Pazarlama"
+    },
     "4488942213": {
       "first_seen": "2026-11-13T13:51:05+00:00",
       "title": "Finansal Muhasebeci"
+    },
+    "4488945370": {
+      "first_seen": "2026-11-13T15:06:00+00:00",
+      "title": "Kurumsal İletişim Yöneticisi"
     },
     "4488948050": {
       "first_seen": "2026-11-13T13:51:05+00:00",
@@ -14941,5 +14949,5 @@
       "title": "Medya Satış Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-11-13T14:50:40+00:00"
+  "updated_at": "2026-11-13T15:06:01+00:00"
 }
