@@ -10492,6 +10492,10 @@
       "first_seen": "2026-10-22T12:35:45+00:00",
       "title": "Pazarlama Personeli"
     },
+    "4479484875": {
+      "first_seen": "2026-11-23T14:20:49+00:00",
+      "title": "Pazarlama ve Kurumsal İletişim Kıdemli Uzmanı"
+    },
     "4479486961": {
       "first_seen": "2026-10-26T12:36:38+00:00",
       "title": "Fiyatlandırma ve Raporlama Uzmanı"
@@ -16600,6 +16604,10 @@
       "first_seen": "2026-11-23T12:23:56+00:00",
       "title": "Muhasebe, Finans ve İdari İşler Uzmanı"
     },
+    "4492608644": {
+      "first_seen": "2026-11-23T14:20:49+00:00",
+      "title": "Marka Pazarlama ve İletişim Müdürü"
+    },
     "4492609096": {
       "first_seen": "2026-11-23T11:49:19+00:00",
       "title": "Muhasebe ve Raporlama Sorumlusu"
@@ -16607,6 +16615,10 @@
     "4492612203": {
       "first_seen": "2026-11-23T13:05:01+00:00",
       "title": "Game Marketing Manager"
+    },
+    "4492612519": {
+      "first_seen": "2026-11-23T14:20:49+00:00",
+      "title": "Pazarlama Uzmanı"
     },
     "4492614017": {
       "first_seen": "2026-11-23T12:23:56+00:00",
@@ -16725,5 +16737,5 @@
       "title": "Medya Satış Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-11-23T14:05:49+00:00"
+  "updated_at": "2026-11-23T14:20:49+00:00"
 }
