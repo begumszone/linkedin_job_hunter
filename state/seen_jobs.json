@@ -16792,6 +16792,10 @@
       "first_seen": "2026-11-24T10:09:02+00:00",
       "title": "Satış ve Pazarlama Temsilcisi"
     },
+    "4492694591": {
+      "first_seen": "2026-11-24T11:18:38+00:00",
+      "title": "Supply Chain Reporting Controlling and Contract Specialist"
+    },
     "4492696221": {
       "first_seen": "2026-11-24T10:09:02+00:00",
       "title": "Finance Specialist"
@@ -16799,6 +16803,10 @@
     "4492696300": {
       "first_seen": "2026-11-24T10:09:02+00:00",
       "title": "Sistem ve Altyapı Uzmanı"
+    },
+    "4492696515": {
+      "first_seen": "2026-11-24T11:18:38+00:00",
+      "title": "Muhasebe ve Finans Sorumlusu"
     },
     "4492699122": {
       "first_seen": "2026-11-24T10:21:40+00:00",
@@ -16839,6 +16847,14 @@
     "4492951837": {
       "first_seen": "2026-11-20T17:34:50+00:00",
       "title": "Treasury & Finance Specialist"
+    },
+    "4493006258": {
+      "first_seen": "2026-11-24T11:18:38+00:00",
+      "title": "Corporate Finance Director"
+    },
+    "4493007016": {
+      "first_seen": "2026-11-24T11:18:38+00:00",
+      "title": "Finance & Accounting Specialist"
     },
     "4493189846": {
       "first_seen": "2026-11-22T16:23:19+00:00",
@@ -16944,6 +16960,10 @@
       "first_seen": "2026-11-24T04:38:14+00:00",
       "title": "Product Marketing Manager, iPhone"
     },
+    "4494108787": {
+      "first_seen": "2026-11-24T11:18:38+00:00",
+      "title": "Trade Marketing Manager"
+    },
     "4494305660": {
       "first_seen": "2026-11-24T05:52:11+00:00",
       "title": "Pazarlama Uzmanı"
@@ -16965,5 +16985,5 @@
       "title": "Medya Satış Pazarlama Uzmanı"
     }
   },
-  "updated_at": "2026-11-24T11:09:44+00:00"
+  "updated_at": "2026-11-24T11:18:38+00:00"
 }
